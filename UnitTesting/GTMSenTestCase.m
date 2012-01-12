@@ -269,7 +269,7 @@ NSString *const SenTestLineNumberKey = @"SenTestLineNumberKey";
   if ([filename length] == 0) {
     filename = @"Unknown.m";
   }
-  fprintf(stderr, "%s:%ld: error: -[%s %s] : %s\n",
+  fprintf(stderr, "\n%s:%ld: error: -[%s %s] : %s\n",
           [filename UTF8String],
           (long)[lineNumber integerValue],
           [className UTF8String],

@@ -125,15 +125,8 @@
     Class currClass = classes[i];
     if (class_respondsToSelector(currClass, @selector(conformsToProtocol:)) &&
         [currClass conformsToProtocol:@protocol(SenTestCase)]) {
-      NSDate *fixtureStartDate = [NSDate date];
-      NSString *fixtureName = NSStringFromClass(currClass);
-      NSString *fixtureStartString
-        = [NSString stringWithFormat:@"Test Suite '%@' started at %@\n",
-                                     fixtureName, fixtureStartDate];
       int fixtureSuccesses = 0;
       int fixtureFailures = 0;
-      fputs([fixtureStartString UTF8String], stderr);
-      fflush(stderr);
       NSArray *invocations = [currClass testInvocations];
       if ([invocations count]) {
         NSInvocation *invocation;
@@ -141,11 +134,7 @@
           GTMTestCase *testCase
             = [[currClass alloc] initWithInvocation:invocation];
           BOOL failed = NO;
-          NSDate *caseStartDate = [NSDate date];
-          NSString *selectorName = NSStringFromSelector([invocation selector]);
-          NSString *caseStartString
-            = [NSString stringWithFormat:@"Test Case '-[%@ %@]' started.\n",
-               fixtureName, selectorName];
+          NSString *caseStartString = @".";
           fputs([caseStartString UTF8String], stderr);
           fflush(stderr);
           @try {
@@ -158,31 +147,14 @@
           } else {
             fixtureSuccesses += 1;
           }
-          NSTimeInterval caseEndTime
-            = [[NSDate date] timeIntervalSinceDate:caseStartDate];
-          NSString *caseEndString
-            = [NSString stringWithFormat:@"Test Case '-[%@ %@]' %@ (%0.3f "
-               @"seconds).\n",
-               fixtureName, selectorName,
-               failed ? @"failed" : @"passed",
-               caseEndTime];
+          NSString *caseEndString = failed ? @"F" : @"";
           fputs([caseEndString UTF8String], stderr);
           fflush(stderr);
           [testCase release];
         }
       }
-      NSDate *fixtureEndDate = [NSDate date];
-      NSTimeInterval fixtureEndTime
-        = [fixtureEndDate timeIntervalSinceDate:fixtureStartDate];
-      NSString *fixtureEndString
-        = [NSString stringWithFormat:@"Test Suite '%@' finished at %@.\n"
-                                     @"Executed %d tests, with %d failures (%d "
-                                     @"unexpected) in %0.3f (%0.3f) seconds\n\n",
-                                     fixtureName, fixtureEndDate,
-                                     fixtureSuccesses + fixtureFailures,
-                                     fixtureFailures, fixtureFailures,
-                                     fixtureEndTime, fixtureEndTime];
 
+      NSString *fixtureEndString = @"";
       fputs([fixtureEndString UTF8String], stderr);
       fflush(stderr);
       totalSuccesses_ += fixtureSuccesses;
@@ -194,7 +166,7 @@
   NSTimeInterval suiteEndTime
     = [suiteEndDate timeIntervalSinceDate:suiteStartDate];
   NSString *suiteEndString
-    = [NSString stringWithFormat:@"Test Suite '%@' finished at %@.\n"
+    = [NSString stringWithFormat:@"\nTest Suite '%@' finished at %@.\n"
                                  @"Executed %d tests, with %d failures (%d "
                                  @"unexpected) in %0.3f (%0.3f) seconds\n\n",
                                  suiteName, suiteEndDate,
