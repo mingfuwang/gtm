@@ -3,6 +3,30 @@ Google Toolbox for Mac Release Notes
 Project site:     http://code.google.com/p/google-toolbox-for-mac/
 Discussion group: http://groups.google.com/group/google-toolbox-for-mac
 
+Release 2.0.??
+Changes since 1.6.0
+??-??-??
+
+- Removed iPhone/GTMABAddressBook in favor of AddressBook/GTMABAddressBook.
+
+- Removed Foundation/GTMHTTPServer and UnitTesting/GTMTestHTTPServer, they
+  are going to go live with the fetcher used by GData (since they were done
+  for that testing).
+
+- Removed Foundation/GTMBase64 and Foundation/GTMNSData+Hex in favor of
+  Foundation/GTMStringEncoding.
+
+- Added Foundation/GTMURITemplate to support the pending standard.
+
+- Changed the xcconfig files so that the SDK and the minimum supported OS
+  version must be set in the project file.  This is the model Apple is pushing
+  for and since they are removing older SDKs with each tool chain release it
+  has forced GTM into this model. By default the SDK will be set to the most
+  recent SDK installed.
+
+- Initial support for using the Xcode provided OCUnit for unittesting on iOS.
+  Define GTM_IPHONE_USE_SENTEST to 1 to use this.
+
 
 Release 1.6.0
 Changes since 1.5.1

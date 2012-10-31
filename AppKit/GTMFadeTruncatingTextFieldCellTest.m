@@ -28,7 +28,7 @@
 
 @implementation GTMFadeTruncatingTextFieldCellTest
 
-- (void)testFadeCell {
+- (void)testFadeCellRight {
   NSTextField *field = [[[NSTextField alloc] initWithFrame:
                          NSMakeRect(0, 0, 100, 16)] autorelease];
   [field setCell:[[[GTMFadeTruncatingTextFieldCell alloc] initTextCell:@""]
@@ -38,6 +38,7 @@
   GTMAssertObjectImageEqualToImageNamed(field,
                                         @"GTMFadeTruncatingTextFieldCellTest1",
                                         nil);
+
   [field setStringValue:@"A short string"];
   GTMAssertObjectImageEqualToImageNamed(field,
                                         @"GTMFadeTruncatingTextFieldCellTest2",
@@ -57,6 +58,48 @@
   [field setStringValue:@"A short string"];
   GTMAssertObjectImageEqualToImageNamed(field,
                                         @"GTMFadeTruncatingTextFieldCellTest4",
+                                        nil);
+}
+
+- (void)testFadeCellLeftAndRight {
+  NSTextField *field = [[[NSTextField alloc] initWithFrame:
+                         NSMakeRect(0, 0, 100, 16)] autorelease];
+  GTMFadeTruncatingTextFieldCell *cell =
+      [[[GTMFadeTruncatingTextFieldCell alloc] initTextCell:@""] autorelease];
+  [cell setTruncateMode:GTMFadeTruncatingHeadAndTail];
+  [cell setDesiredCharactersToTruncateFromHead:5];
+  [field setCell:cell];
+
+  [field setStringValue:@"Fade on both left and right AAAA"];
+  GTMAssertObjectImageEqualToImageNamed(field,
+                                        @"GTMFadeTruncatingTextFieldCellTest5",
+                                        nil);
+
+  [field setStringValue:@"Fade on left only A"];
+  GTMAssertObjectImageEqualToImageNamed(field,
+                                        @"GTMFadeTruncatingTextFieldCellTest6",
+                                        nil);
+
+  [field setStringValue:@"A short string"];
+  GTMAssertObjectImageEqualToImageNamed(field,
+                                        @"GTMFadeTruncatingTextFieldCellTest2",
+                                        nil);
+
+  // Test the case where the number of characters to truncate from head is not
+  // specified. This should cause the string to be drawn centered.
+  [cell setDesiredCharactersToTruncateFromHead:0];
+  [field setStringValue:@"Fade on both left and right AAAA"];
+  GTMAssertObjectImageEqualToImageNamed(field,
+                                        @"GTMFadeTruncatingTextFieldCellTest7",
+                                        nil);
+
+  // Border with a solid background color.
+  [field setTextColor:[NSColor whiteColor]];
+  [field setDrawsBackground:YES];
+  [field setBackgroundColor:[NSColor blackColor]];
+  [field setBordered:YES];
+  GTMAssertObjectImageEqualToImageNamed(field,
+                                        @"GTMFadeTruncatingTextFieldCellTest8",
                                         nil);
 }
 

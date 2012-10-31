@@ -14,6 +14,7 @@
 			);
 			dependencies = (
 				F4C7F9C40DC62ECD009BEE5B /* PBXTargetDependency */,
+				F4D20F1E14852CAB0001600C /* PBXTargetDependency */,
 			);
 			name = "All UnitTests";
 			productName = "All UnitTests";
@@ -21,14 +22,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0B859D9F104D08160064FE46 /* GTMNSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9A104D08050064FE46 /* GTMNSData+Hex.m */; };
-		0B859DA0104D08160064FE46 /* GTMNSData+HexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9B104D08050064FE46 /* GTMNSData+HexTest.m */; };
 		0B859DA1104D08160064FE46 /* GTMNSDictionary+CaseInsensitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9D104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.m */; };
 		0B859DA2104D08160064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9E104D08050064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m */; };
 		0BBC768B10FEF62C0006FABE /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC768910FEF61D0006FABE /* GTMStringEncoding.m */; };
 		0BBC768C10FEF62C0006FABE /* GTMStringEncodingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC768A10FEF61D0006FABE /* GTMStringEncodingTest.m */; };
 		13C1ED4F104896C900907CD8 /* GTMUIView+SubtreeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C1ED4C104896C900907CD8 /* GTMUIView+SubtreeDescription.m */; };
 		13C1ED50104896C900907CD8 /* GTMUIView+SubtreeDescriptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C1ED4D104896C900907CD8 /* GTMUIView+SubtreeDescriptionTest.m */; };
+		169E1E2F1459AAE100E6F562 /* GTMUILocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E1E2B1459AAE100E6F562 /* GTMUILocalizer.m */; };
+		169E1E301459AAE100E6F562 /* GTMUILocalizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E1E2D1459AAE100E6F562 /* GTMUILocalizerTest.m */; };
+		169E1E311459AAE100E6F562 /* GTMUILocalizerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E1E2E1459AAE100E6F562 /* GTMUILocalizerTest.xib */; };
 		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -62,8 +64,6 @@
 		8B308BCE0DAD0B8400183556 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B308BCD0DAD0B8400183556 /* QuartzCore.framework */; };
 		8B3AA8F30E032FC7007E31B5 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA8F10E032FC7007E31B5 /* GTMNSString+URLArguments.m */; };
 		8B3AA8F40E032FC7007E31B5 /* GTMNSString+URLArgumentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA8F20E032FC7007E31B5 /* GTMNSString+URLArgumentsTest.m */; };
-		8B3AA9240E033624007E31B5 /* GTMHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA9200E033624007E31B5 /* GTMHTTPServer.m */; };
-		8B3AA9290E033647007E31B5 /* GTMTestHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA9280E033647007E31B5 /* GTMTestHTTPServer.m */; };
 		8B3AA9340E0336AC007E31B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3AA9330E0336AC007E31B5 /* CFNetwork.framework */; };
 		8B41EC0F0E0711D40040CF9F /* GTMValidatingContainersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B41EC0C0E0711D40040CF9F /* GTMValidatingContainersTest.m */; };
 		8B41EC100E0711D40040CF9F /* GTMValidatingContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B41EC0D0E0711D40040CF9F /* GTMValidatingContainers.m */; };
@@ -103,7 +103,6 @@
 		8BCB5AB211C02D7D009B6C40 /* GTMNSScanner+UnsignedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB5AB011C02D7D009B6C40 /* GTMNSScanner+UnsignedTest.m */; };
 		8BD35C920FB234E1009058F5 /* GTMNSScanner+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD35C900FB234E1009058F5 /* GTMNSScanner+JSON.m */; };
 		8BD35C930FB234E1009058F5 /* GTMNSScanner+JSONTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD35C910FB234E1009058F5 /* GTMNSScanner+JSONTest.m */; };
-		8BDA25130E759A6400C9769D /* GTMHTTPServerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA9210E033624007E31B5 /* GTMHTTPServerTest.m */; };
 		8BDA25140E759A6500C9769D /* GTMNSData+zlibTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047800DAE928A00C2D1CA /* GTMNSData+zlibTest.m */; };
 		8BE839890E89C74B00C611B0 /* GTMDebugThreadValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE839870E89C74A00C611B0 /* GTMDebugThreadValidation.m */; };
 		8BE83A660E8B059A00C611B0 /* GTMDebugThreadValidationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE83A650E8B059A00C611B0 /* GTMDebugThreadValidationTest.m */; };
@@ -112,26 +111,149 @@
 		8BFE15C80FB0F764001BE894 /* GTMABAddressBookTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE15C30FB0F764001BE894 /* GTMABAddressBookTest.m */; };
 		8BFE15C90FB0F764001BE894 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFE15C50FB0F764001BE894 /* phone.png */; };
 		8BFFCD7811C1934900E45777 /* GTMNSObject+KeyValueObservingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C18730F3769D200E51E5D /* GTMNSObject+KeyValueObservingTest.m */; };
+		9340CF9F140550CE0026DDC9 /* GTMFadeTruncatingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340CF9D140550CE0026DDC9 /* GTMFadeTruncatingLabel.m */; };
+		9340CFA0140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340CF9E140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m */; };
+		9340CFA6140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA1140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png */; };
+		9340CFA7140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA2140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png */; };
+		9340CFA8140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA3140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png */; };
+		9340CFA9140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA4140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png */; };
+		9340CFAA140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA5140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png */; };
 		F417115A0ECDFF0400B9B276 /* GTMLightweightProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F41711580ECDFF0400B9B276 /* GTMLightweightProxy.m */; };
 		F417115B0ECDFF0400B9B276 /* GTMLightweightProxyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F41711590ECDFF0400B9B276 /* GTMLightweightProxyTest.m */; };
 		F418AF990E7558EC004FB565 /* GTMExceptionalInlines.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AF940E7558DC004FB565 /* GTMExceptionalInlines.m */; };
 		F418AF9A0E7558EC004FB565 /* GTMExceptionalInlinesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AF950E7558DC004FB565 /* GTMExceptionalInlinesTest.m */; };
-		F418AFA50E7559C7004FB565 /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA30E7559C7004FB565 /* GTMLogger.m */; };
-		F418AFA60E7559C7004FB565 /* GTMLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA40E7559C7004FB565 /* GTMLoggerTest.m */; };
+		F418AFA50E7559C7004FB565 /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA30E7559C7004FB565 /* GTMLogger.m */; settings = {COMPILER_FLAGS = "-Wno-missing-format-attribute"; }; };
+		F418AFA60E7559C7004FB565 /* GTMLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA40E7559C7004FB565 /* GTMLoggerTest.m */; settings = {COMPILER_FLAGS = "-Wno-missing-format-attribute"; }; };
 		F418AFB40E755B4D004FB565 /* GTMLoggerRingBufferWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFB20E755B4D004FB565 /* GTMLoggerRingBufferWriter.m */; };
 		F418AFB50E755B4D004FB565 /* GTMLoggerRingBufferWriterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFB30E755B4D004FB565 /* GTMLoggerRingBufferWriterTest.m */; };
 		F418AFCD0E755C94004FB565 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFCB0E755C94004FB565 /* GTMNSDictionary+URLArguments.m */; };
 		F418AFCE0E755C94004FB565 /* GTMNSDictionary+URLArgumentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFCC0E755C94004FB565 /* GTMNSDictionary+URLArgumentsTest.m */; };
 		F418AFD70E755D44004FB565 /* GTMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFD50E755D44004FB565 /* GTMPath.m */; };
 		F418AFD80E755D44004FB565 /* GTMPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFD60E755D44004FB565 /* GTMPathTest.m */; };
-		F439ADEB0DBD3C0000BE9B91 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADE90DBD3C0000BE9B91 /* GTMBase64.m */; };
-		F439ADEC0DBD3C0000BE9B91 /* GTMBase64Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADEA0DBD3C0000BE9B91 /* GTMBase64Test.m */; };
 		F439ADF00DBD3C4000BE9B91 /* GTMGeometryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADEE0DBD3C4000BE9B91 /* GTMGeometryUtils.m */; };
 		F439ADF10DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADEF0DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m */; };
+		F4746721129703600022C1FB /* GTMSenTestCaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4746720129703600022C1FB /* GTMSenTestCaseTest.m */; };
+		F4D20EB114852CA40001600C /* GTMABAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE15C10FB0F764001BE894 /* GTMABAddressBook.m */; };
+		F4D20EB214852CA40001600C /* GTMABAddressBook.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BFE15C20FB0F764001BE894 /* GTMABAddressBook.strings */; };
+		F4D20EB314852CA40001600C /* GTMABAddressBookTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE15C30FB0F764001BE894 /* GTMABAddressBookTest.m */; };
+		F4D20EB414852CA40001600C /* GTMCALayer+UnitTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047A10DAE928A00C2D1CA /* GTMCALayer+UnitTesting.m */; };
+		F4D20EB514852CA40001600C /* GTMCalculatedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047780DAE928A00C2D1CA /* GTMCalculatedRange.m */; };
+		F4D20EB614852CA40001600C /* GTMCalculatedRangeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047790DAE928A00C2D1CA /* GTMCalculatedRangeTest.m */; };
+		F4D20EB714852CA40001600C /* GTMDebugThreadValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE839870E89C74A00C611B0 /* GTMDebugThreadValidation.m */; };
+		F4D20EB814852CA40001600C /* GTMDebugThreadValidationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE83A650E8B059A00C611B0 /* GTMDebugThreadValidationTest.m */; };
+		F4D20EB914852CA40001600C /* GTMDevLogUnitTestingBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DCEA90DFF4C760017E983 /* GTMDevLogUnitTestingBridge.m */; };
+		F4D20EBA14852CA40001600C /* GTMExceptionalInlines.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AF940E7558DC004FB565 /* GTMExceptionalInlines.m */; };
+		F4D20EBB14852CA40001600C /* GTMExceptionalInlinesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AF950E7558DC004FB565 /* GTMExceptionalInlinesTest.m */; };
+		F4D20EBC14852CA40001600C /* GTMFadeTruncatingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340CF9D140550CE0026DDC9 /* GTMFadeTruncatingLabel.m */; };
+		F4D20EBD14852CA40001600C /* GTMFadeTruncatingLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340CF9E140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m */; };
+		F4D20EBE14852CA40001600C /* GTMFadeTruncatingLabelTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA1140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png */; };
+		F4D20EBF14852CA40001600C /* GTMFadeTruncatingLabelTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA2140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png */; };
+		F4D20EC014852CA40001600C /* GTMFadeTruncatingLabelTest3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA3140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png */; };
+		F4D20EC114852CA40001600C /* GTMFadeTruncatingLabelTest4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA4140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png */; };
+		F4D20EC214852CA40001600C /* GTMFadeTruncatingLabelTest5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9340CFA5140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png */; };
+		F4D20EC314852CA40001600C /* GTMGeometryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADEE0DBD3C4000BE9B91 /* GTMGeometryUtils.m */; };
+		F4D20EC414852CA40001600C /* GTMGeometryUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F439ADEF0DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m */; };
+		F4D20EC514852CA40001600C /* GTMGoogleSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB78FA711B94D9500AB31AF /* GTMGoogleSearch.m */; };
+		F4D20EC614852CA40001600C /* GTMGoogleSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB78FA811B94D9500AB31AF /* GTMGoogleSearchTest.m */; };
+		F4D20EC914852CA40001600C /* GTMLightweightProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F41711580ECDFF0400B9B276 /* GTMLightweightProxy.m */; };
+		F4D20ECA14852CA40001600C /* GTMLightweightProxyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F41711590ECDFF0400B9B276 /* GTMLightweightProxyTest.m */; };
+		F4D20ECB14852CA40001600C /* GTMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA30E7559C7004FB565 /* GTMLogger.m */; settings = {COMPILER_FLAGS = "-Wno-missing-format-attribute"; }; };
+		F4D20ECC14852CA40001600C /* GTMLoggerRingBufferWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFB20E755B4D004FB565 /* GTMLoggerRingBufferWriter.m */; };
+		F4D20ECD14852CA40001600C /* GTMLoggerRingBufferWriterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFB30E755B4D004FB565 /* GTMLoggerRingBufferWriterTest.m */; };
+		F4D20ECE14852CA40001600C /* GTMLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFA40E7559C7004FB565 /* GTMLoggerTest.m */; settings = {COMPILER_FLAGS = "-Wno-missing-format-attribute"; }; };
+		F4D20ECF14852CA40001600C /* GTMMethodCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0479D0DAE928A00C2D1CA /* GTMMethodCheck.m */; };
+		F4D20ED014852CA40001600C /* GTMMethodCheckTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0479E0DAE928A00C2D1CA /* GTMMethodCheckTest.m */; };
+		F4D20ED114852CA40001600C /* GTMNSArray+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = 629446180EDE177A009295EA /* GTMNSArray+Merge.m */; };
+		F4D20ED214852CA40001600C /* GTMNSArray+MergeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 629446190EDE177A009295EA /* GTMNSArray+MergeTest.m */; };
+		F4D20ED314852CA40001600C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0477F0DAE928A00C2D1CA /* GTMNSData+zlib.m */; };
+		F4D20ED414852CA40001600C /* GTMNSData+zlibTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047800DAE928A00C2D1CA /* GTMNSData+zlibTest.m */; };
+		F4D20ED514852CA40001600C /* GTMNSDictionary+CaseInsensitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9D104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.m */; };
+		F4D20ED614852CA40001600C /* GTMNSDictionary+CaseInsensitiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B859D9E104D08050064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m */; };
+		F4D20ED714852CA40001600C /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFCB0E755C94004FB565 /* GTMNSDictionary+URLArguments.m */; };
+		F4D20ED814852CA40001600C /* GTMNSDictionary+URLArgumentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFCC0E755C94004FB565 /* GTMNSDictionary+URLArgumentsTest.m */; };
+		F4D20ED914852CA40001600C /* GTMNSEnumerator+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047820DAE928A00C2D1CA /* GTMNSEnumerator+Filter.m */; };
+		F4D20EDA14852CA40001600C /* GTMNSEnumerator+FilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047830DAE928A00C2D1CA /* GTMNSEnumerator+FilterTest.m */; };
+		F4D20EDB14852CA40001600C /* GTMNSFileHandle+UniqueName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2908B011F8E7070064F50F /* GTMNSFileHandle+UniqueName.m */; };
+		F4D20EDC14852CA40001600C /* GTMNSFileHandle+UniqueNameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2908B111F8E7070064F50F /* GTMNSFileHandle+UniqueNameTest.m */; };
+		F4D20EDD14852CA40001600C /* GTMNSFileManager+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047850DAE928A00C2D1CA /* GTMNSFileManager+Path.m */; };
+		F4D20EDE14852CA40001600C /* GTMNSFileManager+PathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047860DAE928A00C2D1CA /* GTMNSFileManager+PathTest.m */; };
+		F4D20EDF14852CA40001600C /* GTMNSObject+KeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C18720F3769D200E51E5D /* GTMNSObject+KeyValueObserving.m */; };
+		F4D20EE014852CA40001600C /* GTMNSObject+KeyValueObservingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C18730F3769D200E51E5D /* GTMNSObject+KeyValueObservingTest.m */; };
+		F4D20EE114852CA40001600C /* GTMNSObject+UnitTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047ED0DAE928A00C2D1CA /* GTMNSObject+UnitTesting.m */; };
+		F4D20EE214852CA40001600C /* GTMNSScanner+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD35C900FB234E1009058F5 /* GTMNSScanner+JSON.m */; };
+		F4D20EE314852CA40001600C /* GTMNSScanner+JSONTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD35C910FB234E1009058F5 /* GTMNSScanner+JSONTest.m */; };
+		F4D20EE414852CA40001600C /* GTMNSScanner+Unsigned.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB5AAF11C02D7D009B6C40 /* GTMNSScanner+Unsigned.m */; };
+		F4D20EE514852CA40001600C /* GTMNSScanner+UnsignedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB5AB011C02D7D009B6C40 /* GTMNSScanner+UnsignedTest.m */; };
+		F4D20EE614852CA40001600C /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047880DAE928A00C2D1CA /* GTMNSString+HTML.m */; };
+		F4D20EE714852CA40001600C /* GTMNSString+HTMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047890DAE928A00C2D1CA /* GTMNSString+HTMLTest.m */; };
+		F4D20EE814852CA40001600C /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA8F10E032FC7007E31B5 /* GTMNSString+URLArguments.m */; };
+		F4D20EE914852CA40001600C /* GTMNSString+URLArgumentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA8F20E032FC7007E31B5 /* GTMNSString+URLArgumentsTest.m */; };
+		F4D20EEA14852CA40001600C /* GTMNSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0478B0DAE928A00C2D1CA /* GTMNSString+XML.m */; };
+		F4D20EEB14852CA40001600C /* GTMNSString+XMLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0478C0DAE928A00C2D1CA /* GTMNSString+XMLTest.m */; };
+		F4D20EEC14852CA40001600C /* GTMPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFD50E755D44004FB565 /* GTMPath.m */; };
+		F4D20EED14852CA40001600C /* GTMPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F418AFD60E755D44004FB565 /* GTMPathTest.m */; };
+		F4D20EEE14852CA40001600C /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047920DAE928A00C2D1CA /* GTMRegex.m */; };
+		F4D20EEF14852CA40001600C /* GTMRegexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047930DAE928A00C2D1CA /* GTMRegexTest.m */; };
+		F4D20EF014852CA40001600C /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047F70DAE928A00C2D1CA /* GTMSenTestCase.m */; };
+		F4D20EF114852CA40001600C /* GTMSenTestCaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4746720129703600022C1FB /* GTMSenTestCaseTest.m */; };
+		F4D20EF214852CA40001600C /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EF8AD50EBFF814008DD6DA /* GTMStackTrace.m */; };
+		F4D20EF314852CA40001600C /* GTMStackTraceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EF8AD60EBFF814008DD6DA /* GTMStackTraceTest.m */; };
+		F4D20EF414852CA40001600C /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC768910FEF61D0006FABE /* GTMStringEncoding.m */; };
+		F4D20EF514852CA40001600C /* GTMStringEncodingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC768A10FEF61D0006FABE /* GTMStringEncodingTest.m */; };
+		F4D20EF614852CA40001600C /* GTMSystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC04A740DAF145200C2D1CA /* GTMSystemVersion.m */; };
+		F4D20EF714852CA40001600C /* GTMSystemVersionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC04A710DAF144700C2D1CA /* GTMSystemVersionTest.m */; };
+		F4D20EF814852CA40001600C /* GTMUIFont+LineHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E3B3D70EB5EF2400CB713D /* GTMUIFont+LineHeight.m */; };
+		F4D20EF914852CA40001600C /* GTMUIFont+LineHeightTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E3B3E10EB5EF9A00CB713D /* GTMUIFont+LineHeightTest.m */; };
+		F4D20EFA14852CA40001600C /* GTMUIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F5C70FD3E65C00506CC7 /* GTMUIImage+Resize.m */; };
+		F4D20EFB14852CA40001600C /* GTMUIImage+Resize_100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5DB0FD3E68400506CC7 /* GTMUIImage+Resize_100x100.png */; };
+		F4D20EFC14852CA40001600C /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5DC0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_40x60.png */; };
+		F4D20EFD14852CA40001600C /* GTMUIImage+Resize_100x100_to_50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5DD0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_50x50.png */; };
+		F4D20EFE14852CA40001600C /* GTMUIImage+Resize_100x100_to_60x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5CC0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_60x40.png */; };
+		F4D20EFF14852CA40001600C /* GTMUIImage+Resize_100x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D40FD3E68400506CC7 /* GTMUIImage+Resize_100x50.png */; };
+		F4D20F0014852CA40001600C /* GTMUIImage+Resize_100x50_flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 448D61B111AC1AAD0097ACBC /* GTMUIImage+Resize_100x50_flipped.png */; };
+		F4D20F0114852CA40001600C /* GTMUIImage+Resize_100x50_to_40x60_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D50FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_40x60_clip.png */; };
+		F4D20F0214852CA40001600C /* GTMUIImage+Resize_100x50_to_40x60_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D60FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_40x60_noclip.png */; };
+		F4D20F0314852CA40001600C /* GTMUIImage+Resize_100x50_to_50x50_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D70FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_50x50_clip.png */; };
+		F4D20F0414852CA40001600C /* GTMUIImage+Resize_100x50_to_50x50_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D80FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_50x50_noclip.png */; };
+		F4D20F0514852CA40001600C /* GTMUIImage+Resize_100x50_to_60x40_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D90FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_60x40_clip.png */; };
+		F4D20F0614852CA40001600C /* GTMUIImage+Resize_100x50_to_60x40_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5DA0FD3E68400506CC7 /* GTMUIImage+Resize_100x50_to_60x40_noclip.png */; };
+		F4D20F0714852CA40001600C /* GTMUIImage+Resize_50x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5CD0FD3E68400506CC7 /* GTMUIImage+Resize_50x100.png */; };
+		F4D20F0814852CA40001600C /* GTMUIImage+Resize_50x100_flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 448D61B011AC1AAD0097ACBC /* GTMUIImage+Resize_50x100_flipped.png */; };
+		F4D20F0914852CA40001600C /* GTMUIImage+Resize_50x100_to_40x60_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5CE0FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_40x60_clip.png */; };
+		F4D20F0A14852CA40001600C /* GTMUIImage+Resize_50x100_to_40x60_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5CF0FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_40x60_noclip.png */; };
+		F4D20F0B14852CA40001600C /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D00FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_50x50_clip.png */; };
+		F4D20F0C14852CA40001600C /* GTMUIImage+Resize_50x100_to_50x50_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D10FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_50x50_noclip.png */; };
+		F4D20F0D14852CA40001600C /* GTMUIImage+Resize_50x100_to_60x40_clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D20FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_60x40_clip.png */; };
+		F4D20F0E14852CA40001600C /* GTMUIImage+Resize_50x100_to_60x40_noclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F5D30FD3E68400506CC7 /* GTMUIImage+Resize_50x100_to_60x40_noclip.png */; };
+		F4D20F0F14852CA40001600C /* GTMUIImage+ResizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F5C60FD3E65C00506CC7 /* GTMUIImage+ResizeTest.m */; };
+		F4D20F1014852CA40001600C /* GTMUIKit+UnitTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5547C70DB3BBF20014CC1C /* GTMUIKit+UnitTesting.m */; };
+		F4D20F1114852CA40001600C /* GTMUIKit+UnitTestingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5547C90DB3BBF20014CC1C /* GTMUIKit+UnitTestingTest.m */; };
+		F4D20F1214852CA40001600C /* GTMUILocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E1E2B1459AAE100E6F562 /* GTMUILocalizer.m */; };
+		F4D20F1314852CA40001600C /* GTMUILocalizerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E1E2D1459AAE100E6F562 /* GTMUILocalizerTest.m */; };
+		F4D20F1414852CA40001600C /* GTMUILocalizerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E1E2E1459AAE100E6F562 /* GTMUILocalizerTest.xib */; };
+		F4D20F1514852CA40001600C /* GTMUIView+SubtreeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C1ED4C104896C900907CD8 /* GTMUIView+SubtreeDescription.m */; };
+		F4D20F1614852CA40001600C /* GTMUIView+SubtreeDescriptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C1ED4D104896C900907CD8 /* GTMUIView+SubtreeDescriptionTest.m */; };
+		F4D20F1714852CA40001600C /* GTMUIViewUnitTestingTest.gtmUTState in Resources */ = {isa = PBXBuildFile; fileRef = 8BC048000DAE928A00C2D1CA /* GTMUIViewUnitTestingTest.gtmUTState */; };
+		F4D20F1814852CA40001600C /* GTMUIViewUnitTestingTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC048010DAE928A00C2D1CA /* GTMUIViewUnitTestingTest.png */; };
+		F4D20F1914852CA40001600C /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DCEAC0DFF4CA60017E983 /* GTMUnitTestDevLog.m */; };
+		F4D20F1A14852CA40001600C /* GTMValidatingContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B41EC0D0E0711D40040CF9F /* GTMValidatingContainers.m */; };
+		F4D20F1B14852CA40001600C /* GTMValidatingContainersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B41EC0C0E0711D40040CF9F /* GTMValidatingContainersTest.m */; };
+		F4D20F1C14852CA40001600C /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFE15C50FB0F764001BE894 /* phone.png */; };
+		F4D20F2114852D130001600C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3AA9330E0336AC007E31B5 /* CFNetwork.framework */; };
+		F4D20F2214852D130001600C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		F4D20F2314852D130001600C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		F4D20F2414852D130001600C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B308BCD0DAD0B8400183556 /* QuartzCore.framework */; };
+		F4D20F2514852D130001600C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		F4D20F2614852D130001600C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC04D470DB0088500C2D1CA /* libz.dylib */; };
+		F4D20F4E148532D50001600C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5A9E1F0E71CB6C005DA441 /* AddressBook.framework */; };
 		F4E3B3D80EB5EF2400CB713D /* GTMUIFont+LineHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E3B3D70EB5EF2400CB713D /* GTMUIFont+LineHeight.m */; };
 		F4E3B3E20EB5EF9A00CB713D /* GTMUIFont+LineHeightTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E3B3E10EB5EF9A00CB713D /* GTMUIFont+LineHeightTest.m */; };
+		F4E4E1151485378B00C2E584 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4E1141485378B00C2E584 /* SenTestingKit.framework */; };
 		F4EF8AD70EBFF814008DD6DA /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EF8AD50EBFF814008DD6DA /* GTMStackTrace.m */; };
 		F4EF8AD80EBFF814008DD6DA /* GTMStackTraceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EF8AD60EBFF814008DD6DA /* GTMStackTraceTest.m */; };
+		F4F1D87814853D8F00E05BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		F4F1D88814853E0A00E05BB6 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC047DD0DAE928A00C2D1CA /* GTMIPhoneUnitTestMain.m */; };
+		F4F1D88E14853E6100E05BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,12 +264,23 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = GTMiPhoneUnitTesting;
 		};
+		F4D20F1D14852CAB0001600C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D20EA914852BFB0001600C;
+			remoteInfo = GTMiPhoneUnitTestingOCUnit;
+		};
+		F4F1D88914853E0F00E05BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F1D80714853D8F00E05BB6;
+			remoteInfo = GTMiPhoneUnitTestingOCUnitTestRig;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B859D99104D08050064FE46 /* GTMNSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSData+Hex.h"; sourceTree = "<group>"; };
-		0B859D9A104D08050064FE46 /* GTMNSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSData+Hex.m"; sourceTree = "<group>"; };
-		0B859D9B104D08050064FE46 /* GTMNSData+HexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSData+HexTest.m"; sourceTree = "<group>"; };
 		0B859D9C104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+CaseInsensitive.h"; sourceTree = "<group>"; };
 		0B859D9D104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+CaseInsensitive.m"; sourceTree = "<group>"; };
 		0B859D9E104D08050064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+CaseInsensitiveTest.m"; sourceTree = "<group>"; };
@@ -157,6 +290,11 @@
 		13C1ED4C104896C900907CD8 /* GTMUIView+SubtreeDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMUIView+SubtreeDescription.m"; sourceTree = "<group>"; };
 		13C1ED4D104896C900907CD8 /* GTMUIView+SubtreeDescriptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMUIView+SubtreeDescriptionTest.m"; sourceTree = "<group>"; };
 		13C1ED4E104896C900907CD8 /* GTMUIView+SubtreeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMUIView+SubtreeDescription.h"; sourceTree = "<group>"; };
+		169E1E2A1459AAE100E6F562 /* GTMUILocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMUILocalizer.h; sourceTree = "<group>"; };
+		169E1E2B1459AAE100E6F562 /* GTMUILocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMUILocalizer.m; sourceTree = "<group>"; };
+		169E1E2C1459AAE100E6F562 /* GTMUILocalizerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMUILocalizerTest.h; sourceTree = "<group>"; };
+		169E1E2D1459AAE100E6F562 /* GTMUILocalizerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMUILocalizerTest.m; sourceTree = "<group>"; };
+		169E1E2E1459AAE100E6F562 /* GTMUILocalizerTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTMUILocalizerTest.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* GTMiPhoneTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMiPhoneTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,8 +328,6 @@
 		64D0F5DD0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GTMUIImage+Resize_100x100_to_50x50.png"; path = "TestData/GTMUIImage+Resize_100x100_to_50x50.png"; sourceTree = "<group>"; };
 		67A7820A0E00927400EBF506 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
 		67A7820B0E00927400EBF506 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
-		8B23010811C180E2001FA319 /* DebugiPhone40.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone40.xcconfig; sourceTree = "<group>"; };
-		8B23010911C180E2001FA319 /* ReleaseiPhone40.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone40.xcconfig; sourceTree = "<group>"; };
 		8B2908AF11F8E7070064F50F /* GTMNSFileHandle+UniqueName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSFileHandle+UniqueName.h"; sourceTree = "<group>"; };
 		8B2908B011F8E7070064F50F /* GTMNSFileHandle+UniqueName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSFileHandle+UniqueName.m"; sourceTree = "<group>"; };
 		8B2908B111F8E7070064F50F /* GTMNSFileHandle+UniqueNameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSFileHandle+UniqueNameTest.m"; sourceTree = "<group>"; };
@@ -202,11 +338,6 @@
 		8B3AA8F00E032FC7007E31B5 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
 		8B3AA8F10E032FC7007E31B5 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		8B3AA8F20E032FC7007E31B5 /* GTMNSString+URLArgumentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArgumentsTest.m"; sourceTree = "<group>"; };
-		8B3AA91F0E033624007E31B5 /* GTMHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPServer.h; sourceTree = "<group>"; };
-		8B3AA9200E033624007E31B5 /* GTMHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPServer.m; sourceTree = "<group>"; };
-		8B3AA9210E033624007E31B5 /* GTMHTTPServerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPServerTest.m; sourceTree = "<group>"; };
-		8B3AA9270E033647007E31B5 /* GTMTestHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMTestHTTPServer.h; sourceTree = "<group>"; };
-		8B3AA9280E033647007E31B5 /* GTMTestHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMTestHTTPServer.m; sourceTree = "<group>"; };
 		8B3AA9330E0336AC007E31B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8B41EC0C0E0711D40040CF9F /* GTMValidatingContainersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMValidatingContainersTest.m; sourceTree = "<group>"; };
 		8B41EC0D0E0711D40040CF9F /* GTMValidatingContainers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMValidatingContainers.m; sourceTree = "<group>"; };
@@ -263,8 +394,6 @@
 		8BC048000DAE928A00C2D1CA /* GTMUIViewUnitTestingTest.gtmUTState */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GTMUIViewUnitTestingTest.gtmUTState; sourceTree = "<group>"; };
 		8BC048010DAE928A00C2D1CA /* GTMUIViewUnitTestingTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GTMUIViewUnitTestingTest.png; sourceTree = "<group>"; };
 		8BC0480E0DAE928A00C2D1CA /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
-		8BC049850DAEC59100C2D1CA /* DebugiPhone20.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone20.xcconfig; sourceTree = "<group>"; };
-		8BC049890DAEC59100C2D1CA /* ReleaseiPhone20.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone20.xcconfig; sourceTree = "<group>"; };
 		8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CodeCoverage.xcconfig; sourceTree = "<group>"; };
 		8BC04A6F0DAF144200C2D1CA /* GTMSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSystemVersion.h; sourceTree = "<group>"; };
 		8BC04A710DAF144700C2D1CA /* GTMSystemVersionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSystemVersionTest.m; sourceTree = "<group>"; };
@@ -286,10 +415,14 @@
 		8BFE15C20FB0F764001BE894 /* GTMABAddressBook.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = GTMABAddressBook.strings; sourceTree = "<group>"; };
 		8BFE15C30FB0F764001BE894 /* GTMABAddressBookTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMABAddressBookTest.m; sourceTree = "<group>"; };
 		8BFE15C50FB0F764001BE894 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
-		CAD23A741174AE7800EA94E5 /* DebugiPhone32.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone32.xcconfig; sourceTree = "<group>"; };
-		CAD23A751174AE7800EA94E5 /* DebugiPhone313.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone313.xcconfig; sourceTree = "<group>"; };
-		CAD23A761174AE7800EA94E5 /* ReleaseiPhone32.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone32.xcconfig; sourceTree = "<group>"; };
-		CAD23A771174AE7800EA94E5 /* ReleaseiPhone313.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone313.xcconfig; sourceTree = "<group>"; };
+		9340CF9C140550CE0026DDC9 /* GTMFadeTruncatingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMFadeTruncatingLabel.h; sourceTree = "<group>"; };
+		9340CF9D140550CE0026DDC9 /* GTMFadeTruncatingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMFadeTruncatingLabel.m; sourceTree = "<group>"; };
+		9340CF9E140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMFadeTruncatingLabelTest.m; sourceTree = "<group>"; };
+		9340CFA1140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTMFadeTruncatingLabelTest1.png; path = TestData/GTMFadeTruncatingLabelTest1.png; sourceTree = "<group>"; };
+		9340CFA2140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTMFadeTruncatingLabelTest2.png; path = TestData/GTMFadeTruncatingLabelTest2.png; sourceTree = "<group>"; };
+		9340CFA3140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTMFadeTruncatingLabelTest3.png; path = TestData/GTMFadeTruncatingLabelTest3.png; sourceTree = "<group>"; };
+		9340CFA4140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTMFadeTruncatingLabelTest4.png; path = TestData/GTMFadeTruncatingLabelTest4.png; sourceTree = "<group>"; };
+		9340CFA5140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GTMFadeTruncatingLabelTest5.png; path = TestData/GTMFadeTruncatingLabelTest5.png; sourceTree = "<group>"; };
 		F41711570ECDFF0400B9B276 /* GTMLightweightProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMLightweightProxy.h; sourceTree = "<group>"; };
 		F41711580ECDFF0400B9B276 /* GTMLightweightProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMLightweightProxy.m; sourceTree = "<group>"; };
 		F41711590ECDFF0400B9B276 /* GTMLightweightProxyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMLightweightProxyTest.m; sourceTree = "<group>"; };
@@ -310,30 +443,22 @@
 		F418AFD40E755D44004FB565 /* GTMPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMPath.h; sourceTree = "<group>"; };
 		F418AFD50E755D44004FB565 /* GTMPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMPath.m; sourceTree = "<group>"; };
 		F418AFD60E755D44004FB565 /* GTMPathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMPathTest.m; sourceTree = "<group>"; };
-		F439ADE80DBD3C0000BE9B91 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		F439ADE90DBD3C0000BE9B91 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		F439ADEA0DBD3C0000BE9B91 /* GTMBase64Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64Test.m; sourceTree = "<group>"; };
 		F439ADED0DBD3C4000BE9B91 /* GTMGeometryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGeometryUtils.h; sourceTree = "<group>"; };
 		F439ADEE0DBD3C4000BE9B91 /* GTMGeometryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGeometryUtils.m; sourceTree = "<group>"; };
 		F439ADEF0DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGeometryUtilsTest.m; sourceTree = "<group>"; };
+		F4746720129703600022C1FB /* GTMSenTestCaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCaseTest.m; sourceTree = "<group>"; };
+		F4A0A95E140438B90010B64B /* DebugiOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiOS.xcconfig; sourceTree = "<group>"; };
+		F4A0A95F140438B90010B64B /* ReleaseiOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiOS.xcconfig; sourceTree = "<group>"; };
+		F4D20EAA14852BFB0001600C /* GTMiPhoneUnitTestingOCUnit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTMiPhoneUnitTestingOCUnit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D20EAB14852BFB0001600C /* GTMiPhoneUnitTestingOCUnit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTMiPhoneUnitTestingOCUnit-Info.plist"; sourceTree = "<group>"; };
 		F4E3B3D60EB5EF2400CB713D /* GTMUIFont+LineHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMUIFont+LineHeight.h"; sourceTree = "<group>"; };
 		F4E3B3D70EB5EF2400CB713D /* GTMUIFont+LineHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMUIFont+LineHeight.m"; sourceTree = "<group>"; };
 		F4E3B3E10EB5EF9A00CB713D /* GTMUIFont+LineHeightTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMUIFont+LineHeightTest.m"; sourceTree = "<group>"; };
-		F4E426AC10B70DFB00F28A35 /* DebugiPhone21.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone21.xcconfig; sourceTree = "<group>"; };
-		F4E426AD10B70DFB00F28A35 /* DebugiPhone22.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone22.xcconfig; sourceTree = "<group>"; };
-		F4E426AE10B70DFB00F28A35 /* DebugiPhone30.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone30.xcconfig; sourceTree = "<group>"; };
-		F4E426AF10B70DFB00F28A35 /* DebugiPhone31.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone31.xcconfig; sourceTree = "<group>"; };
-		F4E426B010B70DFB00F28A35 /* DebugiPhone221.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone221.xcconfig; sourceTree = "<group>"; };
-		F4E426B110B70DFB00F28A35 /* DebugiPhone312.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugiPhone312.xcconfig; sourceTree = "<group>"; };
-		F4E426B210B70DFB00F28A35 /* ReleaseiPhone21.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone21.xcconfig; sourceTree = "<group>"; };
-		F4E426B310B70DFB00F28A35 /* ReleaseiPhone22.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone22.xcconfig; sourceTree = "<group>"; };
-		F4E426B410B70DFB00F28A35 /* ReleaseiPhone30.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone30.xcconfig; sourceTree = "<group>"; };
-		F4E426B510B70DFB00F28A35 /* ReleaseiPhone31.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone31.xcconfig; sourceTree = "<group>"; };
-		F4E426B610B70DFB00F28A35 /* ReleaseiPhone221.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone221.xcconfig; sourceTree = "<group>"; };
-		F4E426B710B70DFB00F28A35 /* ReleaseiPhone312.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseiPhone312.xcconfig; sourceTree = "<group>"; };
+		F4E4E1141485378B00C2E584 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F4EF8AD40EBFF814008DD6DA /* GTMStackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStackTrace.h; sourceTree = "<group>"; };
 		F4EF8AD50EBFF814008DD6DA /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
 		F4EF8AD60EBFF814008DD6DA /* GTMStackTraceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTraceTest.m; sourceTree = "<group>"; };
+		F4F1D88214853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMiPhoneUnitTestingOCUnitTestRig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +476,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4D20EA714852BFB0001600C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E4E1151485378B00C2E584 /* SenTestingKit.framework in Frameworks */,
+				F4D20F2114852D130001600C /* CFNetwork.framework in Frameworks */,
+				F4D20F2214852D130001600C /* CoreGraphics.framework in Frameworks */,
+				F4D20F2314852D130001600C /* Foundation.framework in Frameworks */,
+				F4D20F2414852D130001600C /* QuartzCore.framework in Frameworks */,
+				F4D20F2514852D130001600C /* UIKit.framework in Frameworks */,
+				F4D20F2614852D130001600C /* libz.dylib in Frameworks */,
+				F4D20F4E148532D50001600C /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F1D87614853D8F00E05BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F1D87814853D8F00E05BB6 /* UIKit.framework in Frameworks */,
+				F4F1D88E14853E6100E05BB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -358,6 +507,8 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* GTMiPhoneTest.app */,
+				F4D20EAA14852BFB0001600C /* GTMiPhoneUnitTestingOCUnit.octest */,
+				F4F1D88214853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +529,7 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				32CA4F630368D1EE00C91783 /* GTM_Prefix.pch */,
 				F418AF6D0E755732004FB565 /* GTMiPhone-Info.plist */,
+				F4D20EAB14852BFB0001600C /* GTMiPhoneUnitTestingOCUnit-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -392,6 +544,7 @@
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				F4E4E1141485378B00C2E584 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -399,6 +552,11 @@
 		64D0F5CB0FD3E66A00506CC7 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
+				9340CFA1140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png */,
+				9340CFA2140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png */,
+				9340CFA3140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png */,
+				9340CFA4140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png */,
+				9340CFA5140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png */,
 				64D0F5CC0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_60x40.png */,
 				64D0F5CD0FD3E68400506CC7 /* GTMUIImage+Resize_50x100.png */,
 				448D61B011AC1AAD0097ACBC /* GTMUIImage+Resize_50x100_flipped.png */,
@@ -426,6 +584,14 @@
 		8BA5F4060E75669000798036 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				169E1E2A1459AAE100E6F562 /* GTMUILocalizer.h */,
+				169E1E2B1459AAE100E6F562 /* GTMUILocalizer.m */,
+				169E1E2C1459AAE100E6F562 /* GTMUILocalizerTest.h */,
+				169E1E2D1459AAE100E6F562 /* GTMUILocalizerTest.m */,
+				169E1E2E1459AAE100E6F562 /* GTMUILocalizerTest.xib */,
+				9340CF9C140550CE0026DDC9 /* GTMFadeTruncatingLabel.h */,
+				9340CF9D140550CE0026DDC9 /* GTMFadeTruncatingLabel.m */,
+				9340CF9E140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m */,
 				F4E3B3D60EB5EF2400CB713D /* GTMUIFont+LineHeight.h */,
 				F4E3B3D70EB5EF2400CB713D /* GTMUIFont+LineHeight.m */,
 				F4E3B3E10EB5EF9A00CB713D /* GTMUIFont+LineHeightTest.m */,
@@ -456,15 +622,9 @@
 				0BBC768810FEF61D0006FABE /* GTMStringEncoding.h */,
 				0BBC768910FEF61D0006FABE /* GTMStringEncoding.m */,
 				0BBC768A10FEF61D0006FABE /* GTMStringEncodingTest.m */,
-				0B859D99104D08050064FE46 /* GTMNSData+Hex.h */,
-				0B859D9A104D08050064FE46 /* GTMNSData+Hex.m */,
-				0B859D9B104D08050064FE46 /* GTMNSData+HexTest.m */,
 				0B859D9C104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.h */,
 				0B859D9D104D08050064FE46 /* GTMNSDictionary+CaseInsensitive.m */,
 				0B859D9E104D08050064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m */,
-				F439ADE80DBD3C0000BE9B91 /* GTMBase64.h */,
-				F439ADE90DBD3C0000BE9B91 /* GTMBase64.m */,
-				F439ADEA0DBD3C0000BE9B91 /* GTMBase64Test.m */,
 				8BC047770DAE928A00C2D1CA /* GTMCalculatedRange.h */,
 				8BC047780DAE928A00C2D1CA /* GTMCalculatedRange.m */,
 				8BC047790DAE928A00C2D1CA /* GTMCalculatedRangeTest.m */,
@@ -475,9 +635,6 @@
 				F439ADED0DBD3C4000BE9B91 /* GTMGeometryUtils.h */,
 				F439ADEE0DBD3C4000BE9B91 /* GTMGeometryUtils.m */,
 				F439ADEF0DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m */,
-				8B3AA91F0E033624007E31B5 /* GTMHTTPServer.h */,
-				8B3AA9200E033624007E31B5 /* GTMHTTPServer.m */,
-				8B3AA9210E033624007E31B5 /* GTMHTTPServerTest.m */,
 				F41711570ECDFF0400B9B276 /* GTMLightweightProxy.h */,
 				F41711580ECDFF0400B9B276 /* GTMLightweightProxy.m */,
 				F41711590ECDFF0400B9B276 /* GTMLightweightProxyTest.m */,
@@ -566,8 +723,6 @@
 			isa = PBXGroup;
 			children = (
 				8B7DCEA90DFF4C760017E983 /* GTMDevLogUnitTestingBridge.m */,
-				8B3AA9270E033647007E31B5 /* GTMTestHTTPServer.h */,
-				8B3AA9280E033647007E31B5 /* GTMTestHTTPServer.m */,
 				8BC047A00DAE928A00C2D1CA /* GTMCALayer+UnitTesting.h */,
 				8BC047A10DAE928A00C2D1CA /* GTMCALayer+UnitTesting.m */,
 				8B5547C70DB3BBF20014CC1C /* GTMUIKit+UnitTesting.m */,
@@ -580,6 +735,7 @@
 				8BC047ED0DAE928A00C2D1CA /* GTMNSObject+UnitTesting.m */,
 				8BC047F60DAE928A00C2D1CA /* GTMSenTestCase.h */,
 				8BC047F70DAE928A00C2D1CA /* GTMSenTestCase.m */,
+				F4746720129703600022C1FB /* GTMSenTestCaseTest.m */,
 				8BC048010DAE928A00C2D1CA /* GTMUIViewUnitTestingTest.png */,
 				8B7DCEAB0DFF4CA60017E983 /* GTMUnitTestDevLog.h */,
 				8B7DCEAC0DFF4CA60017E983 /* GTMUnitTestDevLog.m */,
@@ -610,26 +766,8 @@
 		8BC04F020DB15A5300C2D1CA /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				8BC049850DAEC59100C2D1CA /* DebugiPhone20.xcconfig */,
-				F4E426AC10B70DFB00F28A35 /* DebugiPhone21.xcconfig */,
-				F4E426AD10B70DFB00F28A35 /* DebugiPhone22.xcconfig */,
-				F4E426B010B70DFB00F28A35 /* DebugiPhone221.xcconfig */,
-				F4E426AE10B70DFB00F28A35 /* DebugiPhone30.xcconfig */,
-				F4E426AF10B70DFB00F28A35 /* DebugiPhone31.xcconfig */,
-				F4E426B110B70DFB00F28A35 /* DebugiPhone312.xcconfig */,
-				CAD23A751174AE7800EA94E5 /* DebugiPhone313.xcconfig */,
-				CAD23A741174AE7800EA94E5 /* DebugiPhone32.xcconfig */,
-				8BC049890DAEC59100C2D1CA /* ReleaseiPhone20.xcconfig */,
-				F4E426B210B70DFB00F28A35 /* ReleaseiPhone21.xcconfig */,
-				F4E426B310B70DFB00F28A35 /* ReleaseiPhone22.xcconfig */,
-				F4E426B610B70DFB00F28A35 /* ReleaseiPhone221.xcconfig */,
-				F4E426B410B70DFB00F28A35 /* ReleaseiPhone30.xcconfig */,
-				F4E426B510B70DFB00F28A35 /* ReleaseiPhone31.xcconfig */,
-				F4E426B710B70DFB00F28A35 /* ReleaseiPhone312.xcconfig */,
-				CAD23A771174AE7800EA94E5 /* ReleaseiPhone313.xcconfig */,
-				CAD23A761174AE7800EA94E5 /* ReleaseiPhone32.xcconfig */,
-				8B23010811C180E2001FA319 /* DebugiPhone40.xcconfig */,
-				8B23010911C180E2001FA319 /* ReleaseiPhone40.xcconfig */,
+				F4A0A95E140438B90010B64B /* DebugiOS.xcconfig */,
+				F4A0A95F140438B90010B64B /* ReleaseiOS.xcconfig */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -664,37 +802,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXLegacyTarget section */
-		8B4514EB11BEC38900A9EE64 /* All UnitTests All SDKs All Platforms */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"All UnitTests\" \"All UnitTests\"";
-			buildConfigurationList = 8B4514EC11BEC38900A9EE64 /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs All Platforms" */;
-			buildPhases = (
-			);
-			buildToolPath = BuildScripts/BuildAllSDKs.sh;
-			buildWorkingDirectory = "$(SRCROOT)";
-			dependencies = (
-			);
-			name = "All UnitTests All SDKs All Platforms";
-			passBuildSettingsInEnvironment = 1;
-			productName = "All UnitTests all SDKs";
-		};
-		F4B541440E7F022B004738EC /* All UnitTests All SDKs */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"\" \"All UnitTests\"";
-			buildConfigurationList = F4B5414A0E7F025F004738EC /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs" */;
-			buildPhases = (
-			);
-			buildToolPath = BuildScripts/BuildAllSDKs.sh;
-			buildWorkingDirectory = "$(SRCROOT)";
-			dependencies = (
-			);
-			name = "All UnitTests All SDKs";
-			passBuildSettingsInEnvironment = 1;
-			productName = "All UnitTests all SDKs";
-		};
-/* End PBXLegacyTarget section */
-
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* GTMiPhoneUnitTesting */ = {
 			isa = PBXNativeTarget;
@@ -714,6 +821,42 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* GTMiPhoneTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F4D20EA914852BFB0001600C /* GTMiPhoneUnitTestingOCUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D20EAE14852BFC0001600C /* Build configuration list for PBXNativeTarget "GTMiPhoneUnitTestingOCUnit" */;
+			buildPhases = (
+				F4D20EA514852BFB0001600C /* Resources */,
+				F4D20EA614852BFB0001600C /* Sources */,
+				F4D20EA714852BFB0001600C /* Frameworks */,
+				F4D20EA814852BFB0001600C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4F1D88A14853E0F00E05BB6 /* PBXTargetDependency */,
+			);
+			name = GTMiPhoneUnitTestingOCUnit;
+			productName = GTMiPhoneUnitTestingOCUnit;
+			productReference = F4D20EAA14852BFB0001600C /* GTMiPhoneUnitTestingOCUnit.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F4F1D80714853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F1D87F14853D8F00E05BB6 /* Build configuration list for PBXNativeTarget "GTMiPhoneUnitTestingOCUnitTestRig" */;
+			buildPhases = (
+				F4F1D80814853D8F00E05BB6 /* Resources */,
+				F4F1D82714853D8F00E05BB6 /* Sources */,
+				F4F1D87614853D8F00E05BB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMiPhoneUnitTestingOCUnitTestRig;
+			productName = GTMiPhoneUIUnitTesting;
+			productReference = F4F1D88214853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -721,15 +864,22 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GTMiPhone" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F4C7F9BF0DC62EC8009BEE5B /* All UnitTests */,
 				1D6058900D05DD3D006BFB54 /* GTMiPhoneUnitTesting */,
-				F4B541440E7F022B004738EC /* All UnitTests All SDKs */,
-				8B4514EB11BEC38900A9EE64 /* All UnitTests All SDKs All Platforms */,
+				F4D20EA914852BFB0001600C /* GTMiPhoneUnitTestingOCUnit */,
+				F4F1D80714853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig */,
 			);
 		};
 /* End PBXProject section */
@@ -763,6 +913,56 @@
 				64D0F5ED0FD3E68400506CC7 /* GTMUIImage+Resize_100x100.png in Resources */,
 				64D0F5EE0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */,
 				64D0F5EF0FD3E68400506CC7 /* GTMUIImage+Resize_100x100_to_50x50.png in Resources */,
+				9340CFA6140550E30026DDC9 /* GTMFadeTruncatingLabelTest1.png in Resources */,
+				9340CFA7140550E30026DDC9 /* GTMFadeTruncatingLabelTest2.png in Resources */,
+				9340CFA8140550E30026DDC9 /* GTMFadeTruncatingLabelTest3.png in Resources */,
+				9340CFA9140550E30026DDC9 /* GTMFadeTruncatingLabelTest4.png in Resources */,
+				9340CFAA140550E30026DDC9 /* GTMFadeTruncatingLabelTest5.png in Resources */,
+				169E1E311459AAE100E6F562 /* GTMUILocalizerTest.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D20EA514852BFB0001600C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D20EB214852CA40001600C /* GTMABAddressBook.strings in Resources */,
+				F4D20EBE14852CA40001600C /* GTMFadeTruncatingLabelTest1.png in Resources */,
+				F4D20EBF14852CA40001600C /* GTMFadeTruncatingLabelTest2.png in Resources */,
+				F4D20EC014852CA40001600C /* GTMFadeTruncatingLabelTest3.png in Resources */,
+				F4D20EC114852CA40001600C /* GTMFadeTruncatingLabelTest4.png in Resources */,
+				F4D20EC214852CA40001600C /* GTMFadeTruncatingLabelTest5.png in Resources */,
+				F4D20EFB14852CA40001600C /* GTMUIImage+Resize_100x100.png in Resources */,
+				F4D20EFC14852CA40001600C /* GTMUIImage+Resize_100x100_to_40x60.png in Resources */,
+				F4D20EFD14852CA40001600C /* GTMUIImage+Resize_100x100_to_50x50.png in Resources */,
+				F4D20EFE14852CA40001600C /* GTMUIImage+Resize_100x100_to_60x40.png in Resources */,
+				F4D20EFF14852CA40001600C /* GTMUIImage+Resize_100x50.png in Resources */,
+				F4D20F0014852CA40001600C /* GTMUIImage+Resize_100x50_flipped.png in Resources */,
+				F4D20F0114852CA40001600C /* GTMUIImage+Resize_100x50_to_40x60_clip.png in Resources */,
+				F4D20F0214852CA40001600C /* GTMUIImage+Resize_100x50_to_40x60_noclip.png in Resources */,
+				F4D20F0314852CA40001600C /* GTMUIImage+Resize_100x50_to_50x50_clip.png in Resources */,
+				F4D20F0414852CA40001600C /* GTMUIImage+Resize_100x50_to_50x50_noclip.png in Resources */,
+				F4D20F0514852CA40001600C /* GTMUIImage+Resize_100x50_to_60x40_clip.png in Resources */,
+				F4D20F0614852CA40001600C /* GTMUIImage+Resize_100x50_to_60x40_noclip.png in Resources */,
+				F4D20F0714852CA40001600C /* GTMUIImage+Resize_50x100.png in Resources */,
+				F4D20F0814852CA40001600C /* GTMUIImage+Resize_50x100_flipped.png in Resources */,
+				F4D20F0914852CA40001600C /* GTMUIImage+Resize_50x100_to_40x60_clip.png in Resources */,
+				F4D20F0A14852CA40001600C /* GTMUIImage+Resize_50x100_to_40x60_noclip.png in Resources */,
+				F4D20F0B14852CA40001600C /* GTMUIImage+Resize_50x100_to_50x50_clip.png in Resources */,
+				F4D20F0C14852CA40001600C /* GTMUIImage+Resize_50x100_to_50x50_noclip.png in Resources */,
+				F4D20F0D14852CA40001600C /* GTMUIImage+Resize_50x100_to_60x40_clip.png in Resources */,
+				F4D20F0E14852CA40001600C /* GTMUIImage+Resize_50x100_to_60x40_noclip.png in Resources */,
+				F4D20F1414852CA40001600C /* GTMUILocalizerTest.xib in Resources */,
+				F4D20F1714852CA40001600C /* GTMUIViewUnitTestingTest.gtmUTState in Resources */,
+				F4D20F1814852CA40001600C /* GTMUIViewUnitTestingTest.png in Resources */,
+				F4D20F1C14852CA40001600C /* phone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F1D80814853D8F00E05BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +981,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Nuke coverage data earch run\nexport GTM_REMOVE_GCOV_DATA=1\n# Run the unit tests in this test bundle.\n\"${SRCROOT}/UnitTesting/RunIPhoneUnitTest.sh\"\n";
+		};
+		F4D20EA814852BFB0001600C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -812,8 +1025,6 @@
 				8BC04A750DAF145200C2D1CA /* GTMSystemVersion.m in Sources */,
 				8B5547CA0DB3BBF20014CC1C /* GTMUIKit+UnitTesting.m in Sources */,
 				8B5547CB0DB3BBF20014CC1C /* GTMUIKit+UnitTestingTest.m in Sources */,
-				F439ADEB0DBD3C0000BE9B91 /* GTMBase64.m in Sources */,
-				F439ADEC0DBD3C0000BE9B91 /* GTMBase64Test.m in Sources */,
 				F439ADF00DBD3C4000BE9B91 /* GTMGeometryUtils.m in Sources */,
 				F439ADF10DBD3C4000BE9B91 /* GTMGeometryUtilsTest.m in Sources */,
 				8B7DCEAA0DFF4C760017E983 /* GTMDevLogUnitTestingBridge.m in Sources */,
@@ -821,8 +1032,6 @@
 				67A7820C0E00927400EBF506 /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				8B3AA8F30E032FC7007E31B5 /* GTMNSString+URLArguments.m in Sources */,
 				8B3AA8F40E032FC7007E31B5 /* GTMNSString+URLArgumentsTest.m in Sources */,
-				8B3AA9240E033624007E31B5 /* GTMHTTPServer.m in Sources */,
-				8B3AA9290E033647007E31B5 /* GTMTestHTTPServer.m in Sources */,
 				8B41EC0F0E0711D40040CF9F /* GTMValidatingContainersTest.m in Sources */,
 				8B41EC100E0711D40040CF9F /* GTMValidatingContainers.m in Sources */,
 				F418AF990E7558EC004FB565 /* GTMExceptionalInlines.m in Sources */,
@@ -835,7 +1044,6 @@
 				F418AFCE0E755C94004FB565 /* GTMNSDictionary+URLArgumentsTest.m in Sources */,
 				F418AFD70E755D44004FB565 /* GTMPath.m in Sources */,
 				F418AFD80E755D44004FB565 /* GTMPathTest.m in Sources */,
-				8BDA25130E759A6400C9769D /* GTMHTTPServerTest.m in Sources */,
 				8BDA25140E759A6500C9769D /* GTMNSData+zlibTest.m in Sources */,
 				8BE839890E89C74B00C611B0 /* GTMDebugThreadValidation.m in Sources */,
 				8BE83A660E8B059A00C611B0 /* GTMDebugThreadValidationTest.m in Sources */,
@@ -856,8 +1064,6 @@
 				64D0F5C90FD3E65C00506CC7 /* GTMUIImage+Resize.m in Sources */,
 				13C1ED4F104896C900907CD8 /* GTMUIView+SubtreeDescription.m in Sources */,
 				13C1ED50104896C900907CD8 /* GTMUIView+SubtreeDescriptionTest.m in Sources */,
-				0B859D9F104D08160064FE46 /* GTMNSData+Hex.m in Sources */,
-				0B859DA0104D08160064FE46 /* GTMNSData+HexTest.m in Sources */,
 				0B859DA1104D08160064FE46 /* GTMNSDictionary+CaseInsensitive.m in Sources */,
 				0B859DA2104D08160064FE46 /* GTMNSDictionary+CaseInsensitiveTest.m in Sources */,
 				0BBC768B10FEF62C0006FABE /* GTMStringEncoding.m in Sources */,
@@ -869,6 +1075,102 @@
 				8BFFCD7811C1934900E45777 /* GTMNSObject+KeyValueObservingTest.m in Sources */,
 				8B2908B211F8E7070064F50F /* GTMNSFileHandle+UniqueName.m in Sources */,
 				8B2908B311F8E7070064F50F /* GTMNSFileHandle+UniqueNameTest.m in Sources */,
+				F4746721129703600022C1FB /* GTMSenTestCaseTest.m in Sources */,
+				9340CF9F140550CE0026DDC9 /* GTMFadeTruncatingLabel.m in Sources */,
+				9340CFA0140550CE0026DDC9 /* GTMFadeTruncatingLabelTest.m in Sources */,
+				169E1E2F1459AAE100E6F562 /* GTMUILocalizer.m in Sources */,
+				169E1E301459AAE100E6F562 /* GTMUILocalizerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D20EA614852BFB0001600C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D20EB114852CA40001600C /* GTMABAddressBook.m in Sources */,
+				F4D20EB314852CA40001600C /* GTMABAddressBookTest.m in Sources */,
+				F4D20EB414852CA40001600C /* GTMCALayer+UnitTesting.m in Sources */,
+				F4D20EB514852CA40001600C /* GTMCalculatedRange.m in Sources */,
+				F4D20EB614852CA40001600C /* GTMCalculatedRangeTest.m in Sources */,
+				F4D20EB714852CA40001600C /* GTMDebugThreadValidation.m in Sources */,
+				F4D20EB814852CA40001600C /* GTMDebugThreadValidationTest.m in Sources */,
+				F4D20EB914852CA40001600C /* GTMDevLogUnitTestingBridge.m in Sources */,
+				F4D20EBA14852CA40001600C /* GTMExceptionalInlines.m in Sources */,
+				F4D20EBB14852CA40001600C /* GTMExceptionalInlinesTest.m in Sources */,
+				F4D20EBC14852CA40001600C /* GTMFadeTruncatingLabel.m in Sources */,
+				F4D20EBD14852CA40001600C /* GTMFadeTruncatingLabelTest.m in Sources */,
+				F4D20EC314852CA40001600C /* GTMGeometryUtils.m in Sources */,
+				F4D20EC414852CA40001600C /* GTMGeometryUtilsTest.m in Sources */,
+				F4D20EC514852CA40001600C /* GTMGoogleSearch.m in Sources */,
+				F4D20EC614852CA40001600C /* GTMGoogleSearchTest.m in Sources */,
+				F4D20EC914852CA40001600C /* GTMLightweightProxy.m in Sources */,
+				F4D20ECA14852CA40001600C /* GTMLightweightProxyTest.m in Sources */,
+				F4D20ECB14852CA40001600C /* GTMLogger.m in Sources */,
+				F4D20ECC14852CA40001600C /* GTMLoggerRingBufferWriter.m in Sources */,
+				F4D20ECD14852CA40001600C /* GTMLoggerRingBufferWriterTest.m in Sources */,
+				F4D20ECE14852CA40001600C /* GTMLoggerTest.m in Sources */,
+				F4D20ECF14852CA40001600C /* GTMMethodCheck.m in Sources */,
+				F4D20ED014852CA40001600C /* GTMMethodCheckTest.m in Sources */,
+				F4D20ED114852CA40001600C /* GTMNSArray+Merge.m in Sources */,
+				F4D20ED214852CA40001600C /* GTMNSArray+MergeTest.m in Sources */,
+				F4D20ED314852CA40001600C /* GTMNSData+zlib.m in Sources */,
+				F4D20ED414852CA40001600C /* GTMNSData+zlibTest.m in Sources */,
+				F4D20ED514852CA40001600C /* GTMNSDictionary+CaseInsensitive.m in Sources */,
+				F4D20ED614852CA40001600C /* GTMNSDictionary+CaseInsensitiveTest.m in Sources */,
+				F4D20ED714852CA40001600C /* GTMNSDictionary+URLArguments.m in Sources */,
+				F4D20ED814852CA40001600C /* GTMNSDictionary+URLArgumentsTest.m in Sources */,
+				F4D20ED914852CA40001600C /* GTMNSEnumerator+Filter.m in Sources */,
+				F4D20EDA14852CA40001600C /* GTMNSEnumerator+FilterTest.m in Sources */,
+				F4D20EDB14852CA40001600C /* GTMNSFileHandle+UniqueName.m in Sources */,
+				F4D20EDC14852CA40001600C /* GTMNSFileHandle+UniqueNameTest.m in Sources */,
+				F4D20EDD14852CA40001600C /* GTMNSFileManager+Path.m in Sources */,
+				F4D20EDE14852CA40001600C /* GTMNSFileManager+PathTest.m in Sources */,
+				F4D20EDF14852CA40001600C /* GTMNSObject+KeyValueObserving.m in Sources */,
+				F4D20EE014852CA40001600C /* GTMNSObject+KeyValueObservingTest.m in Sources */,
+				F4D20EE114852CA40001600C /* GTMNSObject+UnitTesting.m in Sources */,
+				F4D20EE214852CA40001600C /* GTMNSScanner+JSON.m in Sources */,
+				F4D20EE314852CA40001600C /* GTMNSScanner+JSONTest.m in Sources */,
+				F4D20EE414852CA40001600C /* GTMNSScanner+Unsigned.m in Sources */,
+				F4D20EE514852CA40001600C /* GTMNSScanner+UnsignedTest.m in Sources */,
+				F4D20EE614852CA40001600C /* GTMNSString+HTML.m in Sources */,
+				F4D20EE714852CA40001600C /* GTMNSString+HTMLTest.m in Sources */,
+				F4D20EE814852CA40001600C /* GTMNSString+URLArguments.m in Sources */,
+				F4D20EE914852CA40001600C /* GTMNSString+URLArgumentsTest.m in Sources */,
+				F4D20EEA14852CA40001600C /* GTMNSString+XML.m in Sources */,
+				F4D20EEB14852CA40001600C /* GTMNSString+XMLTest.m in Sources */,
+				F4D20EEC14852CA40001600C /* GTMPath.m in Sources */,
+				F4D20EED14852CA40001600C /* GTMPathTest.m in Sources */,
+				F4D20EEE14852CA40001600C /* GTMRegex.m in Sources */,
+				F4D20EEF14852CA40001600C /* GTMRegexTest.m in Sources */,
+				F4D20EF014852CA40001600C /* GTMSenTestCase.m in Sources */,
+				F4D20EF114852CA40001600C /* GTMSenTestCaseTest.m in Sources */,
+				F4D20EF214852CA40001600C /* GTMStackTrace.m in Sources */,
+				F4D20EF314852CA40001600C /* GTMStackTraceTest.m in Sources */,
+				F4D20EF414852CA40001600C /* GTMStringEncoding.m in Sources */,
+				F4D20EF514852CA40001600C /* GTMStringEncodingTest.m in Sources */,
+				F4D20EF614852CA40001600C /* GTMSystemVersion.m in Sources */,
+				F4D20EF714852CA40001600C /* GTMSystemVersionTest.m in Sources */,
+				F4D20EF814852CA40001600C /* GTMUIFont+LineHeight.m in Sources */,
+				F4D20EF914852CA40001600C /* GTMUIFont+LineHeightTest.m in Sources */,
+				F4D20EFA14852CA40001600C /* GTMUIImage+Resize.m in Sources */,
+				F4D20F0F14852CA40001600C /* GTMUIImage+ResizeTest.m in Sources */,
+				F4D20F1014852CA40001600C /* GTMUIKit+UnitTesting.m in Sources */,
+				F4D20F1114852CA40001600C /* GTMUIKit+UnitTestingTest.m in Sources */,
+				F4D20F1214852CA40001600C /* GTMUILocalizer.m in Sources */,
+				F4D20F1314852CA40001600C /* GTMUILocalizerTest.m in Sources */,
+				F4D20F1514852CA40001600C /* GTMUIView+SubtreeDescription.m in Sources */,
+				F4D20F1614852CA40001600C /* GTMUIView+SubtreeDescriptionTest.m in Sources */,
+				F4D20F1914852CA40001600C /* GTMUnitTestDevLog.m in Sources */,
+				F4D20F1A14852CA40001600C /* GTMValidatingContainers.m in Sources */,
+				F4D20F1B14852CA40001600C /* GTMValidatingContainersTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F1D82714853D8F00E05BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F1D88814853E0A00E05BB6 /* GTMIPhoneUnitTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,1258 +1182,133 @@
 			target = 1D6058900D05DD3D006BFB54 /* GTMiPhoneUnitTesting */;
 			targetProxy = F4C7F9C30DC62ECD009BEE5B /* PBXContainerItemProxy */;
 		};
+		F4D20F1E14852CAB0001600C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4D20EA914852BFB0001600C /* GTMiPhoneUnitTestingOCUnit */;
+			targetProxy = F4D20F1D14852CAB0001600C /* PBXContainerItemProxy */;
+		};
+		F4F1D88A14853E0F00E05BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4F1D80714853D8F00E05BB6 /* GTMiPhoneUnitTestingOCUnitTestRig */;
+			targetProxy = F4F1D88914853E0F00E05BB6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8B23011211C1810E001FA319 /* iPhone4.0-Debug */ = {
+		F4A0A962140438D50010B64B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B23010811C180E2001FA319 /* DebugiPhone40.xcconfig */;
+			baseConfigurationReference = F4A0A95E140438B90010B64B /* DebugiOS.xcconfig */;
 			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GTM_Prefix.pch;
 				GCC_WARN_SHADOW = YES;
 				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 			};
-			name = "iPhone4.0-Debug";
+			name = Debug;
 		};
-		8B23011311C1810E001FA319 /* iPhone4.0-Debug-gcov */ = {
+		F4A0A963140438D50010B64B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B23010811C180E2001FA319 /* DebugiPhone40.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = "All UnitTests";
+			};
+			name = Debug;
+		};
+		F4A0A964140438D50010B64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GTMiPhone-Info.plist";
+				PRODUCT_NAME = GTMiPhoneTest;
+			};
+			name = Debug;
+		};
+		F4A0A96C140438ED0010B64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A0A95F140438B90010B64B /* ReleaseiOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GTM_Prefix.pch;
 				GCC_WARN_SHADOW = YES;
 				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 			};
-			name = "iPhone4.0-Debug-gcov";
+			name = Release;
 		};
-		8B23011411C1810E001FA319 /* iPhone4.0-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B23010911C180E2001FA319 /* ReleaseiPhone40.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone4.0-Release";
-		};
-		8B23011511C1810E001FA319 /* iPhone4.0-Debug */ = {
+		F4A0A96D140438ED0010B64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "All UnitTests";
 			};
-			name = "iPhone4.0-Debug";
+			name = Release;
 		};
-		8B23011611C1810E001FA319 /* iPhone4.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone4.0-Debug-gcov";
-		};
-		8B23011711C1810E001FA319 /* iPhone4.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone4.0-Release";
-		};
-		8B23011811C1810E001FA319 /* iPhone4.0-Debug */ = {
+		F4A0A96E140438ED0010B64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "GTMiPhone-Info.plist";
 				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
 			};
-			name = "iPhone4.0-Debug";
+			name = Release;
 		};
-		8B23011911C1810E001FA319 /* iPhone4.0-Debug-gcov */ = {
+		F4D20EAC14852BFB0001600C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTMiPhoneUnitTestingOCUnitTestRig.app/GTMiPhoneUnitTestingOCUnitTestRig";
+				FRAMEWORK_SEARCH_PATHS = "${SDKROOT}/Developer/Library/Frameworks/";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"GTM_IPHONE_USE_SENTEST=1",
+				);
+				INFOPLIST_FILE = "GTMiPhoneUnitTestingOCUnit-Info.plist";
+				PRODUCT_NAME = GTMiPhoneUnitTestingOCUnit;
+				TEST_HOST = "${BUNDLE_LOADER}";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F4D20EAD14852BFB0001600C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTMiPhoneUnitTestingOCUnitTestRig.app/GTMiPhoneUnitTestingOCUnitTestRig";
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = "${SDKROOT}/Developer/Library/Frameworks/";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"GTM_IPHONE_USE_SENTEST=1",
+				);
+				INFOPLIST_FILE = "GTMiPhoneUnitTestingOCUnit-Info.plist";
+				PRODUCT_NAME = GTMiPhoneUnitTestingOCUnit;
+				TEST_HOST = "${BUNDLE_LOADER}";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		F4F1D88014853D8F00E05BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"GTM_IPHONE_USE_SENTEST=1",
+				);
 				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
+				PRODUCT_NAME = GTMiPhoneUnitTestingOCUnitTestRig;
 			};
-			name = "iPhone4.0-Debug-gcov";
+			name = Debug;
 		};
-		8B23011A11C1810E001FA319 /* iPhone4.0-Release */ = {
+		F4F1D88114853D8F00E05BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"GTM_IPHONE_USE_SENTEST=1",
+				);
 				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
+				PRODUCT_NAME = GTMiPhoneUnitTestingOCUnitTestRig;
 			};
-			name = "iPhone4.0-Release";
-		};
-		8B23011B11C1810E001FA319 /* iPhone4.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Debug";
-		};
-		8B23011C11C1810E001FA319 /* iPhone4.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Debug-gcov";
-		};
-		8B23011D11C1810E001FA319 /* iPhone4.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Release";
-		};
-		8B23011E11C1810E001FA319 /* iPhone4.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Debug";
-		};
-		8B23011F11C1810E001FA319 /* iPhone4.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Debug-gcov";
-		};
-		8B23012011C1810E001FA319 /* iPhone4.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone4.0-Release";
-		};
-		8B4514ED11BEC38900A9EE64 /* iPhone2.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs All Platforms";
-			};
-			name = "iPhone2.0-Debug";
-		};
-		8B4514EE11BEC38900A9EE64 /* iPhone2.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.0-Debug-gcov";
-		};
-		8B4514EF11BEC38900A9EE64 /* iPhone2.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.0-Release";
-		};
-		8B4514F011BEC38900A9EE64 /* iPhone2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Debug";
-		};
-		8B4514F111BEC38900A9EE64 /* iPhone2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Debug-gcov";
-		};
-		8B4514F211BEC38900A9EE64 /* iPhone2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Release";
-		};
-		8B4514F311BEC38900A9EE64 /* iPhone2.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Debug";
-		};
-		8B4514F411BEC38900A9EE64 /* iPhone2.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Debug-gcov";
-		};
-		8B4514F511BEC38900A9EE64 /* iPhone2.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Release";
-		};
-		8B4514F611BEC38900A9EE64 /* iPhone2.2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Debug";
-		};
-		8B4514F711BEC38900A9EE64 /* iPhone2.2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Debug-gcov";
-		};
-		8B4514F811BEC38900A9EE64 /* iPhone2.2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Release";
-		};
-		8B4514F911BEC38900A9EE64 /* iPhone3.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Debug";
-		};
-		8B4514FA11BEC38900A9EE64 /* iPhone3.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Debug-gcov";
-		};
-		8B4514FB11BEC38900A9EE64 /* iPhone3.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Release";
-		};
-		8B4514FC11BEC38900A9EE64 /* iPhone3.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Debug";
-		};
-		8B4514FD11BEC38900A9EE64 /* iPhone3.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Debug-gcov";
-		};
-		8B4514FE11BEC38900A9EE64 /* iPhone3.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Release";
-		};
-		8B4514FF11BEC38900A9EE64 /* iPhone3.1.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Debug";
-		};
-		8B45150011BEC38900A9EE64 /* iPhone3.1.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Debug-gcov";
-		};
-		8B45150111BEC38900A9EE64 /* iPhone3.1.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Release";
-		};
-		8B45150211BEC38900A9EE64 /* iPhone3.1.3-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Debug";
-		};
-		8B45150311BEC38900A9EE64 /* iPhone3.1.3-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Debug-gcov";
-		};
-		8B45150411BEC38900A9EE64 /* iPhone3.1.3-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Release";
-		};
-		8B45150511BEC38900A9EE64 /* iPhone3.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Debug";
-		};
-		8B45150611BEC38900A9EE64 /* iPhone3.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Debug-gcov";
-		};
-		8B45150711BEC38900A9EE64 /* iPhone3.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Release";
-		};
-		CAD23A781174AE9F00EA94E5 /* iPhone3.1.3-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A751174AE7800EA94E5 /* DebugiPhone313.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1.3-Debug";
-		};
-		CAD23A791174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A751174AE7800EA94E5 /* DebugiPhone313.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone3.1.3-Debug-gcov";
-		};
-		CAD23A7A1174AE9F00EA94E5 /* iPhone3.1.3-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A771174AE7800EA94E5 /* ReleaseiPhone313.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1.3-Release";
-		};
-		CAD23A7B1174AE9F00EA94E5 /* iPhone3.1.3-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.3-Debug";
-		};
-		CAD23A7C1174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.3-Debug-gcov";
-		};
-		CAD23A7D1174AE9F00EA94E5 /* iPhone3.1.3-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.3-Release";
-		};
-		CAD23A7E1174AE9F00EA94E5 /* iPhone3.1.3-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.3;
-			};
-			name = "iPhone3.1.3-Debug";
-		};
-		CAD23A7F1174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.3;
-			};
-			name = "iPhone3.1.3-Debug-gcov";
-		};
-		CAD23A801174AE9F00EA94E5 /* iPhone3.1.3-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.3;
-			};
-			name = "iPhone3.1.3-Release";
-		};
-		CAD23A811174AE9F00EA94E5 /* iPhone3.1.3-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Debug";
-		};
-		CAD23A821174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Debug-gcov";
-		};
-		CAD23A831174AE9F00EA94E5 /* iPhone3.1.3-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.3-Release";
-		};
-		CAD23A841174AF2400EA94E5 /* iPhone3.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A741174AE7800EA94E5 /* DebugiPhone32.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.2-Debug";
-		};
-		CAD23A851174AF2400EA94E5 /* iPhone3.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A741174AE7800EA94E5 /* DebugiPhone32.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone3.2-Debug-gcov";
-		};
-		CAD23A861174AF2400EA94E5 /* iPhone3.2-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAD23A761174AE7800EA94E5 /* ReleaseiPhone32.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.2-Release";
-		};
-		CAD23A871174AF2400EA94E5 /* iPhone3.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.2-Debug";
-		};
-		CAD23A881174AF2400EA94E5 /* iPhone3.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.2-Debug-gcov";
-		};
-		CAD23A891174AF2400EA94E5 /* iPhone3.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.2-Release";
-		};
-		CAD23A8A1174AF2400EA94E5 /* iPhone3.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
-			};
-			name = "iPhone3.2-Debug";
-		};
-		CAD23A8B1174AF2400EA94E5 /* iPhone3.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
-			};
-			name = "iPhone3.2-Debug-gcov";
-		};
-		CAD23A8C1174AF2400EA94E5 /* iPhone3.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.2;
-			};
-			name = "iPhone3.2-Release";
-		};
-		CAD23A8D1174AF2400EA94E5 /* iPhone3.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Debug";
-		};
-		CAD23A8E1174AF2400EA94E5 /* iPhone3.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Debug-gcov";
-		};
-		CAD23A8F1174AF2400EA94E5 /* iPhone3.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.2-Release";
-		};
-		F4E4263610B70C4F00F28A35 /* iPhone2.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC049850DAEC59100C2D1CA /* DebugiPhone20.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.0-Debug";
-		};
-		F4E4263710B70C4F00F28A35 /* iPhone2.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC049850DAEC59100C2D1CA /* DebugiPhone20.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone2.0-Debug-gcov";
-		};
-		F4E4263810B70C4F00F28A35 /* iPhone2.0-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC049890DAEC59100C2D1CA /* ReleaseiPhone20.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.0-Release";
-		};
-		F4E4263910B70C4F00F28A35 /* iPhone2.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.0-Debug";
-		};
-		F4E4263A10B70C4F00F28A35 /* iPhone2.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.0-Debug-gcov";
-		};
-		F4E4263B10B70C4F00F28A35 /* iPhone2.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.0-Release";
-		};
-		F4E4263C10B70C4F00F28A35 /* iPhone2.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.0;
-			};
-			name = "iPhone2.0-Debug";
-		};
-		F4E4263D10B70C4F00F28A35 /* iPhone2.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.0;
-			};
-			name = "iPhone2.0-Debug-gcov";
-		};
-		F4E4263E10B70C4F00F28A35 /* iPhone2.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.0;
-			};
-			name = "iPhone2.0-Release";
-		};
-		F4E4263F10B70C4F00F28A35 /* iPhone2.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "iPhone2.0-Debug";
-		};
-		F4E4264010B70C4F00F28A35 /* iPhone2.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.0-Debug-gcov";
-		};
-		F4E4264110B70C4F00F28A35 /* iPhone2.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.0-Release";
-		};
-		F4E4265110B70C9300F28A35 /* iPhone2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426AC10B70DFB00F28A35 /* DebugiPhone21.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.1-Debug";
-		};
-		F4E4265210B70C9300F28A35 /* iPhone2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426AC10B70DFB00F28A35 /* DebugiPhone21.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone2.1-Debug-gcov";
-		};
-		F4E4265310B70C9300F28A35 /* iPhone2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B210B70DFB00F28A35 /* ReleaseiPhone21.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.1-Release";
-		};
-		F4E4265410B70C9300F28A35 /* iPhone2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.1-Debug";
-		};
-		F4E4265510B70C9300F28A35 /* iPhone2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.1-Debug-gcov";
-		};
-		F4E4265610B70C9300F28A35 /* iPhone2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.1-Release";
-		};
-		F4E4265710B70C9300F28A35 /* iPhone2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.1;
-			};
-			name = "iPhone2.1-Debug";
-		};
-		F4E4265810B70C9300F28A35 /* iPhone2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.1;
-			};
-			name = "iPhone2.1-Debug-gcov";
-		};
-		F4E4265910B70C9300F28A35 /* iPhone2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.1;
-			};
-			name = "iPhone2.1-Release";
-		};
-		F4E4265A10B70C9300F28A35 /* iPhone2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Debug";
-		};
-		F4E4265B10B70C9300F28A35 /* iPhone2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Debug-gcov";
-		};
-		F4E4265C10B70C9300F28A35 /* iPhone2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.1-Release";
-		};
-		F4E4265D10B70CAC00F28A35 /* iPhone2.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426AD10B70DFB00F28A35 /* DebugiPhone22.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone2.2-Debug-gcov";
-		};
-		F4E4265E10B70CAC00F28A35 /* iPhone2.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426AD10B70DFB00F28A35 /* DebugiPhone22.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.2-Debug";
-		};
-		F4E4265F10B70CAC00F28A35 /* iPhone2.2-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B310B70DFB00F28A35 /* ReleaseiPhone22.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.2-Release";
-		};
-		F4E4266010B70CAC00F28A35 /* iPhone2.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2-Debug-gcov";
-		};
-		F4E4266110B70CAC00F28A35 /* iPhone2.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2-Debug";
-		};
-		F4E4266210B70CAC00F28A35 /* iPhone2.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2-Release";
-		};
-		F4E4266310B70CAC00F28A35 /* iPhone2.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2;
-			};
-			name = "iPhone2.2-Debug-gcov";
-		};
-		F4E4266410B70CAC00F28A35 /* iPhone2.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2;
-			};
-			name = "iPhone2.2-Debug";
-		};
-		F4E4266510B70CAC00F28A35 /* iPhone2.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2;
-			};
-			name = "iPhone2.2-Release";
-		};
-		F4E4266610B70CAC00F28A35 /* iPhone2.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Debug-gcov";
-		};
-		F4E4266710B70CAC00F28A35 /* iPhone2.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Debug";
-		};
-		F4E4266810B70CAC00F28A35 /* iPhone2.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2-Release";
-		};
-		F4E4267510B70CE200F28A35 /* iPhone2.2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B010B70DFB00F28A35 /* DebugiPhone221.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.2.1-Debug";
-		};
-		F4E4267610B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B010B70DFB00F28A35 /* DebugiPhone221.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone2.2.1-Debug-gcov";
-		};
-		F4E4267710B70CE200F28A35 /* iPhone2.2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B610B70DFB00F28A35 /* ReleaseiPhone221.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone2.2.1-Release";
-		};
-		F4E4267810B70CE200F28A35 /* iPhone2.2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2.1-Debug";
-		};
-		F4E4267910B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2.1-Debug-gcov";
-		};
-		F4E4267A10B70CE200F28A35 /* iPhone2.2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone2.2.1-Release";
-		};
-		F4E4267B10B70CE200F28A35 /* iPhone2.2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2.1;
-			};
-			name = "iPhone2.2.1-Debug";
-		};
-		F4E4267C10B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2.1;
-			};
-			name = "iPhone2.2.1-Debug-gcov";
-		};
-		F4E4267D10B70CE200F28A35 /* iPhone2.2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator2.2.1;
-			};
-			name = "iPhone2.2.1-Release";
-		};
-		F4E4267E10B70CE200F28A35 /* iPhone2.2.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Debug";
-		};
-		F4E4267F10B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Debug-gcov";
-		};
-		F4E4268010B70CE200F28A35 /* iPhone2.2.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone2.2.1-Release";
-		};
-		F4E4268110B70CF900F28A35 /* iPhone3.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426AE10B70DFB00F28A35 /* DebugiPhone30.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.0-Debug";
-		};
-		F4E4268210B70CF900F28A35 /* iPhone3.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B410B70DFB00F28A35 /* ReleaseiPhone30.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone3.0-Debug-gcov";
-		};
-		F4E4268310B70CF900F28A35 /* iPhone3.0-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B410B70DFB00F28A35 /* ReleaseiPhone30.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.0-Release";
-		};
-		F4E4268410B70CF900F28A35 /* iPhone3.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.0-Debug";
-		};
-		F4E4268510B70CF900F28A35 /* iPhone3.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.0-Debug-gcov";
-		};
-		F4E4268610B70CF900F28A35 /* iPhone3.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.0-Release";
-		};
-		F4E4268710B70CF900F28A35 /* iPhone3.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.0;
-			};
-			name = "iPhone3.0-Debug";
-		};
-		F4E4268810B70CF900F28A35 /* iPhone3.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.0;
-			};
-			name = "iPhone3.0-Debug-gcov";
-		};
-		F4E4268910B70CF900F28A35 /* iPhone3.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.0;
-			};
-			name = "iPhone3.0-Release";
-		};
-		F4E4268A10B70CF900F28A35 /* iPhone3.0-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Debug";
-		};
-		F4E4268B10B70CF900F28A35 /* iPhone3.0-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Debug-gcov";
-		};
-		F4E4268C10B70CF900F28A35 /* iPhone3.0-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.0-Release";
-		};
-		F4E4268D10B70D1800F28A35 /* iPhone3.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B510B70DFB00F28A35 /* ReleaseiPhone31.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1-Debug";
-		};
-		F4E4268E10B70D1800F28A35 /* iPhone3.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B510B70DFB00F28A35 /* ReleaseiPhone31.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone3.1-Debug-gcov";
-		};
-		F4E4268F10B70D1800F28A35 /* iPhone3.1-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B510B70DFB00F28A35 /* ReleaseiPhone31.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1-Release";
-		};
-		F4E4269010B70D1800F28A35 /* iPhone3.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1-Debug";
-		};
-		F4E4269110B70D1800F28A35 /* iPhone3.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1-Debug-gcov";
-		};
-		F4E4269210B70D1800F28A35 /* iPhone3.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1-Release";
-		};
-		F4E4269310B70D1800F28A35 /* iPhone3.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1;
-			};
-			name = "iPhone3.1-Debug";
-		};
-		F4E4269410B70D1800F28A35 /* iPhone3.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1;
-			};
-			name = "iPhone3.1-Debug-gcov";
-		};
-		F4E4269510B70D1800F28A35 /* iPhone3.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1;
-			};
-			name = "iPhone3.1-Release";
-		};
-		F4E4269610B70D1800F28A35 /* iPhone3.1-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Debug";
-		};
-		F4E4269710B70D1800F28A35 /* iPhone3.1-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Debug-gcov";
-		};
-		F4E4269810B70D1800F28A35 /* iPhone3.1-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1-Release";
-		};
-		F4E4269910B70D2D00F28A35 /* iPhone3.1.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B110B70DFB00F28A35 /* DebugiPhone312.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1.2-Debug";
-		};
-		F4E4269A10B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B110B70DFB00F28A35 /* DebugiPhone312.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				LIBRARY_SEARCH_PATHS = SnowLeopardGcov;
-			};
-			name = "iPhone3.1.2-Debug-gcov";
-		};
-		F4E4269B10B70D2D00F28A35 /* iPhone3.1.2-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E426B710B70DFB00F28A35 /* ReleaseiPhone312.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-			};
-			name = "iPhone3.1.2-Release";
-		};
-		F4E4269C10B70D2D00F28A35 /* iPhone3.1.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.2-Debug";
-		};
-		F4E4269D10B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.2-Debug-gcov";
-		};
-		F4E4269E10B70D2D00F28A35 /* iPhone3.1.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "iPhone3.1.2-Release";
-		};
-		F4E4269F10B70D2D00F28A35 /* iPhone3.1.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.2;
-			};
-			name = "iPhone3.1.2-Debug";
-		};
-		F4E426A010B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC0498F0DAEC59100C2D1CA /* CodeCoverage.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.2;
-			};
-			name = "iPhone3.1.2-Debug-gcov";
-		};
-		F4E426A110B70D2D00F28A35 /* iPhone3.1.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "GTMiPhone-Info.plist";
-				PRODUCT_NAME = GTMiPhoneTest;
-				SDKROOT = iphonesimulator3.1.2;
-			};
-			name = "iPhone3.1.2-Release";
-		};
-		F4E426A210B70D2D00F28A35 /* iPhone3.1.2-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Debug";
-		};
-		F4E426A310B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Debug-gcov";
-		};
-		F4E426A410B70D2D00F28A35 /* iPhone3.1.2-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests all SDKs";
-			};
-			name = "iPhone3.1.2-Release";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2139,187 +1316,47 @@
 		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GTMiPhoneUnitTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4E4263C10B70C4F00F28A35 /* iPhone2.0-Debug */,
-				F4E4263D10B70C4F00F28A35 /* iPhone2.0-Debug-gcov */,
-				F4E4263E10B70C4F00F28A35 /* iPhone2.0-Release */,
-				F4E4265710B70C9300F28A35 /* iPhone2.1-Debug */,
-				F4E4265810B70C9300F28A35 /* iPhone2.1-Debug-gcov */,
-				F4E4265910B70C9300F28A35 /* iPhone2.1-Release */,
-				F4E4266410B70CAC00F28A35 /* iPhone2.2-Debug */,
-				F4E4266310B70CAC00F28A35 /* iPhone2.2-Debug-gcov */,
-				F4E4266510B70CAC00F28A35 /* iPhone2.2-Release */,
-				F4E4267B10B70CE200F28A35 /* iPhone2.2.1-Debug */,
-				F4E4267C10B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */,
-				F4E4267D10B70CE200F28A35 /* iPhone2.2.1-Release */,
-				F4E4268710B70CF900F28A35 /* iPhone3.0-Debug */,
-				F4E4268810B70CF900F28A35 /* iPhone3.0-Debug-gcov */,
-				F4E4268910B70CF900F28A35 /* iPhone3.0-Release */,
-				F4E4269310B70D1800F28A35 /* iPhone3.1-Debug */,
-				F4E4269410B70D1800F28A35 /* iPhone3.1-Debug-gcov */,
-				F4E4269510B70D1800F28A35 /* iPhone3.1-Release */,
-				F4E4269F10B70D2D00F28A35 /* iPhone3.1.2-Debug */,
-				F4E426A010B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */,
-				F4E426A110B70D2D00F28A35 /* iPhone3.1.2-Release */,
-				CAD23A7E1174AE9F00EA94E5 /* iPhone3.1.3-Debug */,
-				CAD23A7F1174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */,
-				CAD23A801174AE9F00EA94E5 /* iPhone3.1.3-Release */,
-				CAD23A8A1174AF2400EA94E5 /* iPhone3.2-Debug */,
-				CAD23A8B1174AF2400EA94E5 /* iPhone3.2-Debug-gcov */,
-				CAD23A8C1174AF2400EA94E5 /* iPhone3.2-Release */,
-				8B23011811C1810E001FA319 /* iPhone4.0-Debug */,
-				8B23011911C1810E001FA319 /* iPhone4.0-Debug-gcov */,
-				8B23011A11C1810E001FA319 /* iPhone4.0-Release */,
+				F4A0A964140438D50010B64B /* Debug */,
+				F4A0A96E140438ED0010B64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "iPhone3.1.2-Debug";
-		};
-		8B4514EC11BEC38900A9EE64 /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs All Platforms" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B4514ED11BEC38900A9EE64 /* iPhone2.0-Debug */,
-				8B4514EE11BEC38900A9EE64 /* iPhone2.0-Debug-gcov */,
-				8B4514EF11BEC38900A9EE64 /* iPhone2.0-Release */,
-				8B4514F011BEC38900A9EE64 /* iPhone2.1-Debug */,
-				8B4514F111BEC38900A9EE64 /* iPhone2.1-Debug-gcov */,
-				8B4514F211BEC38900A9EE64 /* iPhone2.1-Release */,
-				8B4514F311BEC38900A9EE64 /* iPhone2.2-Debug */,
-				8B4514F411BEC38900A9EE64 /* iPhone2.2-Debug-gcov */,
-				8B4514F511BEC38900A9EE64 /* iPhone2.2-Release */,
-				8B4514F611BEC38900A9EE64 /* iPhone2.2.1-Debug */,
-				8B4514F711BEC38900A9EE64 /* iPhone2.2.1-Debug-gcov */,
-				8B4514F811BEC38900A9EE64 /* iPhone2.2.1-Release */,
-				8B4514F911BEC38900A9EE64 /* iPhone3.0-Debug */,
-				8B4514FA11BEC38900A9EE64 /* iPhone3.0-Debug-gcov */,
-				8B4514FB11BEC38900A9EE64 /* iPhone3.0-Release */,
-				8B4514FC11BEC38900A9EE64 /* iPhone3.1-Debug */,
-				8B4514FD11BEC38900A9EE64 /* iPhone3.1-Debug-gcov */,
-				8B4514FE11BEC38900A9EE64 /* iPhone3.1-Release */,
-				8B4514FF11BEC38900A9EE64 /* iPhone3.1.2-Debug */,
-				8B45150011BEC38900A9EE64 /* iPhone3.1.2-Debug-gcov */,
-				8B45150111BEC38900A9EE64 /* iPhone3.1.2-Release */,
-				8B45150211BEC38900A9EE64 /* iPhone3.1.3-Debug */,
-				8B45150311BEC38900A9EE64 /* iPhone3.1.3-Debug-gcov */,
-				8B45150411BEC38900A9EE64 /* iPhone3.1.3-Release */,
-				8B45150511BEC38900A9EE64 /* iPhone3.2-Debug */,
-				8B45150611BEC38900A9EE64 /* iPhone3.2-Debug-gcov */,
-				8B45150711BEC38900A9EE64 /* iPhone3.2-Release */,
-				8B23011E11C1810E001FA319 /* iPhone4.0-Debug */,
-				8B23011F11C1810E001FA319 /* iPhone4.0-Debug-gcov */,
-				8B23012011C1810E001FA319 /* iPhone4.0-Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "iPhone3.1.2-Debug";
+			defaultConfigurationName = Debug;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GTMiPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4E4263610B70C4F00F28A35 /* iPhone2.0-Debug */,
-				F4E4263710B70C4F00F28A35 /* iPhone2.0-Debug-gcov */,
-				F4E4263810B70C4F00F28A35 /* iPhone2.0-Release */,
-				F4E4265110B70C9300F28A35 /* iPhone2.1-Debug */,
-				F4E4265210B70C9300F28A35 /* iPhone2.1-Debug-gcov */,
-				F4E4265310B70C9300F28A35 /* iPhone2.1-Release */,
-				F4E4265E10B70CAC00F28A35 /* iPhone2.2-Debug */,
-				F4E4265D10B70CAC00F28A35 /* iPhone2.2-Debug-gcov */,
-				F4E4265F10B70CAC00F28A35 /* iPhone2.2-Release */,
-				F4E4267510B70CE200F28A35 /* iPhone2.2.1-Debug */,
-				F4E4267610B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */,
-				F4E4267710B70CE200F28A35 /* iPhone2.2.1-Release */,
-				F4E4268110B70CF900F28A35 /* iPhone3.0-Debug */,
-				F4E4268210B70CF900F28A35 /* iPhone3.0-Debug-gcov */,
-				F4E4268310B70CF900F28A35 /* iPhone3.0-Release */,
-				F4E4268D10B70D1800F28A35 /* iPhone3.1-Debug */,
-				F4E4268E10B70D1800F28A35 /* iPhone3.1-Debug-gcov */,
-				F4E4268F10B70D1800F28A35 /* iPhone3.1-Release */,
-				F4E4269910B70D2D00F28A35 /* iPhone3.1.2-Debug */,
-				F4E4269A10B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */,
-				F4E4269B10B70D2D00F28A35 /* iPhone3.1.2-Release */,
-				CAD23A781174AE9F00EA94E5 /* iPhone3.1.3-Debug */,
-				CAD23A791174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */,
-				CAD23A7A1174AE9F00EA94E5 /* iPhone3.1.3-Release */,
-				CAD23A841174AF2400EA94E5 /* iPhone3.2-Debug */,
-				CAD23A851174AF2400EA94E5 /* iPhone3.2-Debug-gcov */,
-				CAD23A861174AF2400EA94E5 /* iPhone3.2-Release */,
-				8B23011211C1810E001FA319 /* iPhone4.0-Debug */,
-				8B23011311C1810E001FA319 /* iPhone4.0-Debug-gcov */,
-				8B23011411C1810E001FA319 /* iPhone4.0-Release */,
+				F4A0A962140438D50010B64B /* Debug */,
+				F4A0A96C140438ED0010B64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "iPhone3.1.2-Debug";
-		};
-		F4B5414A0E7F025F004738EC /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4E4263F10B70C4F00F28A35 /* iPhone2.0-Debug */,
-				F4E4264010B70C4F00F28A35 /* iPhone2.0-Debug-gcov */,
-				F4E4264110B70C4F00F28A35 /* iPhone2.0-Release */,
-				F4E4265A10B70C9300F28A35 /* iPhone2.1-Debug */,
-				F4E4265B10B70C9300F28A35 /* iPhone2.1-Debug-gcov */,
-				F4E4265C10B70C9300F28A35 /* iPhone2.1-Release */,
-				F4E4266710B70CAC00F28A35 /* iPhone2.2-Debug */,
-				F4E4266610B70CAC00F28A35 /* iPhone2.2-Debug-gcov */,
-				F4E4266810B70CAC00F28A35 /* iPhone2.2-Release */,
-				F4E4267E10B70CE200F28A35 /* iPhone2.2.1-Debug */,
-				F4E4267F10B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */,
-				F4E4268010B70CE200F28A35 /* iPhone2.2.1-Release */,
-				F4E4268A10B70CF900F28A35 /* iPhone3.0-Debug */,
-				F4E4268B10B70CF900F28A35 /* iPhone3.0-Debug-gcov */,
-				F4E4268C10B70CF900F28A35 /* iPhone3.0-Release */,
-				F4E4269610B70D1800F28A35 /* iPhone3.1-Debug */,
-				F4E4269710B70D1800F28A35 /* iPhone3.1-Debug-gcov */,
-				F4E4269810B70D1800F28A35 /* iPhone3.1-Release */,
-				F4E426A210B70D2D00F28A35 /* iPhone3.1.2-Debug */,
-				F4E426A310B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */,
-				F4E426A410B70D2D00F28A35 /* iPhone3.1.2-Release */,
-				CAD23A811174AE9F00EA94E5 /* iPhone3.1.3-Debug */,
-				CAD23A821174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */,
-				CAD23A831174AE9F00EA94E5 /* iPhone3.1.3-Release */,
-				CAD23A8D1174AF2400EA94E5 /* iPhone3.2-Debug */,
-				CAD23A8E1174AF2400EA94E5 /* iPhone3.2-Debug-gcov */,
-				CAD23A8F1174AF2400EA94E5 /* iPhone3.2-Release */,
-				8B23011B11C1810E001FA319 /* iPhone4.0-Debug */,
-				8B23011C11C1810E001FA319 /* iPhone4.0-Debug-gcov */,
-				8B23011D11C1810E001FA319 /* iPhone4.0-Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "iPhone3.1.2-Debug";
+			defaultConfigurationName = Debug;
 		};
 		F4C7F9C50DC62F0C009BEE5B /* Build configuration list for PBXAggregateTarget "All UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4E4263910B70C4F00F28A35 /* iPhone2.0-Debug */,
-				F4E4263A10B70C4F00F28A35 /* iPhone2.0-Debug-gcov */,
-				F4E4263B10B70C4F00F28A35 /* iPhone2.0-Release */,
-				F4E4265410B70C9300F28A35 /* iPhone2.1-Debug */,
-				F4E4265510B70C9300F28A35 /* iPhone2.1-Debug-gcov */,
-				F4E4265610B70C9300F28A35 /* iPhone2.1-Release */,
-				F4E4266110B70CAC00F28A35 /* iPhone2.2-Debug */,
-				F4E4266010B70CAC00F28A35 /* iPhone2.2-Debug-gcov */,
-				F4E4266210B70CAC00F28A35 /* iPhone2.2-Release */,
-				F4E4267810B70CE200F28A35 /* iPhone2.2.1-Debug */,
-				F4E4267910B70CE200F28A35 /* iPhone2.2.1-Debug-gcov */,
-				F4E4267A10B70CE200F28A35 /* iPhone2.2.1-Release */,
-				F4E4268410B70CF900F28A35 /* iPhone3.0-Debug */,
-				F4E4268510B70CF900F28A35 /* iPhone3.0-Debug-gcov */,
-				F4E4268610B70CF900F28A35 /* iPhone3.0-Release */,
-				F4E4269010B70D1800F28A35 /* iPhone3.1-Debug */,
-				F4E4269110B70D1800F28A35 /* iPhone3.1-Debug-gcov */,
-				F4E4269210B70D1800F28A35 /* iPhone3.1-Release */,
-				F4E4269C10B70D2D00F28A35 /* iPhone3.1.2-Debug */,
-				F4E4269D10B70D2D00F28A35 /* iPhone3.1.2-Debug-gcov */,
-				F4E4269E10B70D2D00F28A35 /* iPhone3.1.2-Release */,
-				CAD23A7B1174AE9F00EA94E5 /* iPhone3.1.3-Debug */,
-				CAD23A7C1174AE9F00EA94E5 /* iPhone3.1.3-Debug-gcov */,
-				CAD23A7D1174AE9F00EA94E5 /* iPhone3.1.3-Release */,
-				CAD23A871174AF2400EA94E5 /* iPhone3.2-Debug */,
-				CAD23A881174AF2400EA94E5 /* iPhone3.2-Debug-gcov */,
-				CAD23A891174AF2400EA94E5 /* iPhone3.2-Release */,
-				8B23011511C1810E001FA319 /* iPhone4.0-Debug */,
-				8B23011611C1810E001FA319 /* iPhone4.0-Debug-gcov */,
-				8B23011711C1810E001FA319 /* iPhone4.0-Release */,
+				F4A0A963140438D50010B64B /* Debug */,
+				F4A0A96D140438ED0010B64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "iPhone3.1.2-Debug";
+			defaultConfigurationName = Debug;
+		};
+		F4D20EAE14852BFC0001600C /* Build configuration list for PBXNativeTarget "GTMiPhoneUnitTestingOCUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D20EAC14852BFB0001600C /* Debug */,
+				F4D20EAD14852BFB0001600C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4F1D87F14853D8F00E05BB6 /* Build configuration list for PBXNativeTarget "GTMiPhoneUnitTestingOCUnitTestRig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F1D88014853D8F00E05BB6 /* Debug */,
+				F4F1D88114853D8F00E05BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
