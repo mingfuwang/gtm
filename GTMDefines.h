@@ -21,9 +21,13 @@
 #include <AvailabilityMacros.h>
 #include <TargetConditionals.h>
 
+#ifdef __OBJC__
+#include <Foundation/NSObjCRuntime.h>
+#endif  // __OBJC__
+
 #if TARGET_OS_IPHONE
 #include <Availability.h>
-#endif //  TARGET_OS_IPHONE
+#endif  // TARGET_OS_IPHONE
 
 // Not all MAC_OS_X_VERSION_10_X macros defined in past SDKs
 #ifndef MAC_OS_X_VERSION_10_5
@@ -351,12 +355,31 @@
   #define GTM_NONNULL(x) __attribute__((nonnull(x)))
 #endif
 
+// Invalidates the initializer from which it's called.
+#ifndef GTMInvalidateInitializer
+  #if __has_feature(objc_arc)
+    #define GTMInvalidateInitializer() \
+      do { \
+        [self class]; /* Avoid warning of dead store to |self|. */ \
+        _GTMDevAssert(NO, @"Invalid initializer."); \
+        return nil; \
+      } while (0)
+  #else
+    #define GTMInvalidateInitializer() \
+      do { \
+        [self release]; \
+        _GTMDevAssert(NO, @"Invalid initializer."); \
+        return nil; \
+      } while (0)
+  #endif
+#endif
+
 #ifdef __OBJC__
 
 // Declared here so that it can easily be used for logging tracking if
 // necessary. See GTMUnitTestDevLog.h for details.
 @class NSString;
-GTM_EXTERN void _GTMUnitTestDevLog(NSString *format, ...);
+GTM_EXTERN void _GTMUnitTestDevLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
 // Macro to allow you to create NSStrings out of other macros.
 // #define FOO foo
@@ -418,4 +441,4 @@ GTM_EXTERN void _GTMUnitTestDevLog(NSString *format, ...);
   #endif  // DEBUG
 #endif  // GTM_SEL_STRING
 
-#endif // __OBJC__
+#endif  // __OBJC__

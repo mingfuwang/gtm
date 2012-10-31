@@ -24,16 +24,6 @@
 
 @implementation GTMNSFileHandle_UniqueNameTest
 
-- (void)testGTMUniqueFileObjectPathBasedOn {
-  NSString *path = GTMUniqueFileObjectPathBasedOn(nil);
-  STAssertNil(path, nil);
-  path = GTMUniqueFileObjectPathBasedOn(@"/System");
-  STAssertNil(path, nil);
-  path = GTMUniqueFileObjectPathBasedOn(@"/Users/HappyXXXXXX");
-  STAssertTrue([path hasPrefix:@"/Users/Happy"], nil);
-  STAssertNotEqualObjects(path, @"/Users/HappyXXXXXX", nil);
-}
-
 - (void)testFileHandleWithUniqueNameBasedOnFinalPath {
   NSFileHandle *handle
     = [NSFileHandle gtm_fileHandleWithUniqueNameBasedOn:nil
@@ -95,7 +85,7 @@
   STAssertNil(handle, nil);
   STAssertNil(newPath, nil);
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if GTM_MACOS_SDK && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
   [fm removeFileAtPath:tempDir handler:nil];
 #else //  MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
   [fm removeItemAtPath:tempDir error:nil];
@@ -121,7 +111,7 @@
   STAssertNotNil(handle, nil);
   STAssertNotNil(path, nil);
   STAssertTrue([fm fileExistsAtPath:path], nil);
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if GTM_MACOS_SDK && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
   [fm removeFileAtPath:path handler:nil];
 #else //  MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
   [fm removeItemAtPath:path error:nil];
@@ -156,7 +146,7 @@
   BOOL isDirectory = NO;
   STAssertTrue([fm fileExistsAtPath:path isDirectory:&isDirectory]
                && isDirectory, nil);
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if GTM_MACOS_SDK && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
   [fm removeFileAtPath:path handler:nil];
 #else //  MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
   [fm removeItemAtPath:path error:nil];

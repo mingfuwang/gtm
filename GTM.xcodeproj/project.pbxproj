@@ -233,6 +233,9 @@
 		8BB77A0511B5A09900AB31AF /* GTMGoogleSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB77A0311B5A09900AB31AF /* GTMGoogleSearchTest.m */; };
 		8BB77A0611B5A0A100AB31AF /* GTMGoogleSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB77A0211B5A09900AB31AF /* GTMGoogleSearch.m */; };
 		8BB7802E11B6C4EA00AB31AF /* GTMGoogleSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB77A0111B5A09900AB31AF /* GTMGoogleSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBD1F8C1519258A003152F0 /* GTMNSThread+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BBD1F8A1519258A003152F0 /* GTMNSThread+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBD1F8D1519258A003152F0 /* GTMNSThread+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD1F8B1519258A003152F0 /* GTMNSThread+Blocks.m */; };
+		8BBD1F8F1519271A003152F0 /* GTMNSThread+BlocksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD1F8E1519271A003152F0 /* GTMNSThread+BlocksTest.m */; };
 		8BC046B90DAE8C4B00C2D1CA /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC046B80DAE8C4B00C2D1CA /* ApplicationServices.framework */; };
 		8BC04CD80DB003D800C2D1CA /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6F31F40DA3489B0052CA40 /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BC85150127A18D50046E0FB /* GTMServiceManagement.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B414E861226FB1000D0064F /* GTMServiceManagement.c */; };
@@ -255,7 +258,7 @@
 		8BEEA90D0DA7446300894774 /* GTMUnitTestingImage.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEA90A0DA7446300894774 /* GTMUnitTestingImage.tiff */; };
 		8BEEA90E0DA7446300894774 /* GTMUnitTestingWindow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEA90B0DA7446300894774 /* GTMUnitTestingWindow.tiff */; };
 		8BEEA90F0DA7446300894774 /* GTMUnitTestingView.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8BEEA90C0DA7446300894774 /* GTMUnitTestingView.tiff */; };
-		8BF2368F13CF67CB00F3FD82 /* GTMKeyValueAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF2368D13CF67CB00F3FD82 /* GTMKeyValueAnimation.h */; };
+		8BF2368F13CF67CB00F3FD82 /* GTMKeyValueAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF2368D13CF67CB00F3FD82 /* GTMKeyValueAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF2369013CF67CB00F3FD82 /* GTMKeyValueAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2368E13CF67CB00F3FD82 /* GTMKeyValueAnimation.m */; };
 		8BF2369213CF694C00F3FD82 /* GTMKeyValueAnimationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF2369113CF694C00F3FD82 /* GTMKeyValueAnimationTest.m */; };
 		8BF2555310F65B56000490C8 /* GTMTypeCasting.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF2555110F65B56000490C8 /* GTMTypeCasting.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -595,8 +598,6 @@
 		8207B8970FEA7A98008A527B /* GTMWindowSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMWindowSheetController.h; sourceTree = "<group>"; };
 		8207B8980FEA7A98008A527B /* GTMWindowSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMWindowSheetController.m; sourceTree = "<group>"; };
 		8207B8990FEA7A98008A527B /* GTMWindowSheetControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMWindowSheetControllerTest.m; sourceTree = "<group>"; };
-		848269C80E9FF4BD006E6D9C /* DebugSnowLeopardOrLater.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugSnowLeopardOrLater.xcconfig; sourceTree = "<group>"; };
-		848269C90E9FF4BD006E6D9C /* ReleaseSnowLeopardOrLater.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseSnowLeopardOrLater.xcconfig; sourceTree = "<group>"; };
 		84B91B890EA3CC2E0087500F /* GTMUnitTestingImage.10.6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GTMUnitTestingImage.10.6.tiff; sourceTree = "<group>"; };
 		84B91B8A0EA3CC2E0087500F /* GTMUnitTestingWindow.10.6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GTMUnitTestingWindow.10.6.tiff; sourceTree = "<group>"; };
 		84D99F360EA661C900C007D5 /* BuildAllSDKs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildAllSDKs.sh; sourceTree = "<group>"; };
@@ -696,6 +697,27 @@
 		8B55479A0DB3B7A50014CC1C /* GTMAppKit+UnitTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMAppKit+UnitTesting.h"; sourceTree = "<group>"; };
 		8B55479B0DB3B7A50014CC1C /* GTMAppKit+UnitTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMAppKit+UnitTesting.m"; sourceTree = "<group>"; };
 		8B58E9940E547EB000A0E02E /* GTMGetURLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGetURLHandler.m; sourceTree = "<group>"; };
+		8B5B4ABC15BF31050081A96C /* CodeCoverage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeCoverage.xcconfig; sourceTree = "<group>"; };
+		8B5B4ABD15BF31050081A96C /* CodeCoverageStatic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeCoverageStatic.xcconfig; sourceTree = "<group>"; };
+		8B5B4ABE15BF31050081A96C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8B5B4ABF15BF31050081A96C /* GCSupported.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GCSupported.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC015BF31050081A96C /* General.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = General.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC115BF31050081A96C /* GTMMerge.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GTMMerge.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC215BF31050081A96C /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC315BF31050081A96C /* iPhone30.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone30.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC415BF31050081A96C /* iPhone31.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone31.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC515BF31050081A96C /* iPhone312.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone312.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC615BF31050081A96C /* iPhone313.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone313.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC715BF31050081A96C /* iPhone32.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone32.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC815BF31050081A96C /* iPhone40.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone40.xcconfig; sourceTree = "<group>"; };
+		8B5B4AC915BF31050081A96C /* iPhone41.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iPhone41.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACA15BF31050081A96C /* LeopardOrLater.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LeopardOrLater.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACB15BF31050081A96C /* MacOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacOS.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACC15BF31050081A96C /* MacOSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacOSX.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACD15BF31050081A96C /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACE15BF31050081A96C /* SnowLeopardOrLater.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SnowLeopardOrLater.xcconfig; sourceTree = "<group>"; };
+		8B5B4ACF15BF31050081A96C /* TigerOrLater.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TigerOrLater.xcconfig; sourceTree = "<group>"; };
+		8B5B4AD015BF31050081A96C /* Unittest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Unittest.xcconfig; sourceTree = "<group>"; };
 		8B61FDBF0E4CDB8000FF9C21 /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
 		8B6C15910F356E6400E51E5D /* GTMNSObject+KeyValueObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSObject+KeyValueObserving.h"; sourceTree = "<group>"; };
 		8B6C15920F356E6400E51E5D /* GTMNSObject+KeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSObject+KeyValueObserving.m"; sourceTree = "<group>"; };
@@ -773,6 +795,9 @@
 		8BB77A0111B5A09900AB31AF /* GTMGoogleSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGoogleSearch.h; sourceTree = "<group>"; };
 		8BB77A0211B5A09900AB31AF /* GTMGoogleSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGoogleSearch.m; sourceTree = "<group>"; };
 		8BB77A0311B5A09900AB31AF /* GTMGoogleSearchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGoogleSearchTest.m; sourceTree = "<group>"; };
+		8BBD1F8A1519258A003152F0 /* GTMNSThread+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSThread+Blocks.h"; sourceTree = "<group>"; };
+		8BBD1F8B1519258A003152F0 /* GTMNSThread+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSThread+Blocks.m"; sourceTree = "<group>"; };
+		8BBD1F8E1519271A003152F0 /* GTMNSThread+BlocksTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSThread+BlocksTest.m"; sourceTree = "<group>"; };
 		8BC046B80DAE8C4B00C2D1CA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		8BC04D140DB0061300C2D1CA /* RunMacOSUnitTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunMacOSUnitTests.sh; sourceTree = "<group>"; };
 		8BC85131127A18AE0046E0FB /* GTMServiceManagementTestingHarness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GTMServiceManagementTestingHarness; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -958,8 +983,6 @@
 		F4C62487109753960069CADD /* GTMIBArrayTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTMIBArrayTest.xib; sourceTree = "<group>"; };
 		F4C978090D5B79C7001C29A6 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
 		F4CA854E0DAFAAB600B4AB10 /* xcconfigs-readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xcconfigs-readme.txt"; sourceTree = "<group>"; };
-		F4CA864A0DB3ACB200B4AB10 /* DebugLeopardOrLater.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugLeopardOrLater.xcconfig; sourceTree = "<group>"; };
-		F4CA864B0DB3ACB200B4AB10 /* ReleaseLeopardOrLater.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseLeopardOrLater.xcconfig; sourceTree = "<group>"; };
 		F4CA864C0DB3ACD200B4AB10 /* LoadableBundleGCSupported.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = LoadableBundleGCSupported.xcconfig; sourceTree = "<group>"; };
 		F4CA864D0DB3ACD200B4AB10 /* SharedLibraryGCSupported.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SharedLibraryGCSupported.xcconfig; sourceTree = "<group>"; };
 		F4CA864E0DB3ACD200B4AB10 /* StaticLibraryGCSupported.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibraryGCSupported.xcconfig; sourceTree = "<group>"; };
@@ -1173,6 +1196,34 @@
 			path = GTMUIUnitTestingHarness;
 			sourceTree = "<group>";
 		};
+		8B5B4ABB15BF31050081A96C /* subconfig */ = {
+			isa = PBXGroup;
+			children = (
+				8B5B4ABC15BF31050081A96C /* CodeCoverage.xcconfig */,
+				8B5B4ABD15BF31050081A96C /* CodeCoverageStatic.xcconfig */,
+				8B5B4ABE15BF31050081A96C /* Debug.xcconfig */,
+				8B5B4ABF15BF31050081A96C /* GCSupported.xcconfig */,
+				8B5B4AC015BF31050081A96C /* General.xcconfig */,
+				8B5B4AC115BF31050081A96C /* GTMMerge.xcconfig */,
+				8B5B4AC215BF31050081A96C /* iOS.xcconfig */,
+				8B5B4AC315BF31050081A96C /* iPhone30.xcconfig */,
+				8B5B4AC415BF31050081A96C /* iPhone31.xcconfig */,
+				8B5B4AC515BF31050081A96C /* iPhone312.xcconfig */,
+				8B5B4AC615BF31050081A96C /* iPhone313.xcconfig */,
+				8B5B4AC715BF31050081A96C /* iPhone32.xcconfig */,
+				8B5B4AC815BF31050081A96C /* iPhone40.xcconfig */,
+				8B5B4AC915BF31050081A96C /* iPhone41.xcconfig */,
+				8B5B4ACA15BF31050081A96C /* LeopardOrLater.xcconfig */,
+				8B5B4ACB15BF31050081A96C /* MacOS.xcconfig */,
+				8B5B4ACC15BF31050081A96C /* MacOSX.xcconfig */,
+				8B5B4ACD15BF31050081A96C /* Release.xcconfig */,
+				8B5B4ACE15BF31050081A96C /* SnowLeopardOrLater.xcconfig */,
+				8B5B4ACF15BF31050081A96C /* TigerOrLater.xcconfig */,
+				8B5B4AD015BF31050081A96C /* Unittest.xcconfig */,
+			);
+			path = subconfig;
+			sourceTree = "<group>";
+		};
 		8BFE13AF0FB0F2B9001BE894 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -1350,6 +1401,7 @@
 			children = (
 				F4CA854E0DAFAAB600B4AB10 /* xcconfigs-readme.txt */,
 				F4CA852B0DAFA92A00B4AB10 /* Project */,
+				8B5B4ABB15BF31050081A96C /* subconfig */,
 				F4CA852E0DAFA92F00B4AB10 /* Target */,
 			);
 			path = XcodeConfig;
@@ -1552,6 +1604,9 @@
 				F43E4C250D4E361D0041161F /* GTMNSString+XML.h */,
 				F43E4C260D4E361D0041161F /* GTMNSString+XML.m */,
 				F43E4C270D4E361D0041161F /* GTMNSString+XMLTest.m */,
+				8BBD1F8A1519258A003152F0 /* GTMNSThread+Blocks.h */,
+				8BBD1F8B1519258A003152F0 /* GTMNSThread+Blocks.m */,
+				8BBD1F8E1519271A003152F0 /* GTMNSThread+BlocksTest.m */,
 				F43E4E5E0D4E5EC90041161F /* GTMNSData+zlib.h */,
 				F43E4E5F0D4E5EC90041161F /* GTMNSData+zlib.m */,
 				F43E4E600D4E5EC90041161F /* GTMNSData+zlibTest.m */,
@@ -1633,12 +1688,8 @@
 			children = (
 				F4CC9F3F148E5E2500B7D68C /* DebugMacOSX.xcconfig */,
 				F48FE2410D197F9A009257D2 /* DebugTigerOrLater.xcconfig */,
-				F4CA864A0DB3ACB200B4AB10 /* DebugLeopardOrLater.xcconfig */,
-				848269C80E9FF4BD006E6D9C /* DebugSnowLeopardOrLater.xcconfig */,
 				F4CC9F40148E5E2500B7D68C /* ReleaseMacOSX.xcconfig */,
 				F48FE2440D197F9A009257D2 /* ReleaseTigerOrLater.xcconfig */,
-				F4CA864B0DB3ACB200B4AB10 /* ReleaseLeopardOrLater.xcconfig */,
-				848269C90E9FF4BD006E6D9C /* ReleaseSnowLeopardOrLater.xcconfig */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -1755,43 +1806,13 @@
 				8BCB59F011C00ED6009B6C40 /* GTMNSScanner+Unsigned.h in Headers */,
 				8B29080A11F8E1670064F50F /* GTMNSFileHandle+UniqueName.h in Headers */,
 				8B414E891226FB1000D0064F /* GTMServiceManagement.h in Headers */,
-				F42866B81267340A0090FE0F /* GTMURITemplate.h in Headers */,
+				8BBD1F8C1519258A003152F0 /* GTMNSThread+Blocks.h in Headers */,
 				8BF2368F13CF67CB00F3FD82 /* GTMKeyValueAnimation.h in Headers */,
+				F42866B81267340A0090FE0F /* GTMURITemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
-
-/* Begin PBXLegacyTarget section */
-		F41A6EE00E02DB4F00788A6C /* Build GTM All SDKs */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = GTM;
-			buildConfigurationList = F41A6EED0E02DB6800788A6C /* Build configuration list for PBXLegacyTarget "Build GTM All SDKs" */;
-			buildPhases = (
-			);
-			buildToolPath = BuildScripts/BuildAllSDKs.sh;
-			buildWorkingDirectory = "$(SRCROOT)";
-			dependencies = (
-			);
-			name = "Build GTM All SDKs";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Build GTM All SDKs";
-		};
-		F41A6EF80E02DCFC00788A6C /* All UnitTests All SDKs */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"All UnitTests\" \"\"";
-			buildConfigurationList = F41A6F070E02DD1500788A6C /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs" */;
-			buildPhases = (
-			);
-			buildToolPath = BuildScripts/BuildAllSDKs.sh;
-			buildWorkingDirectory = "$(SRCROOT)";
-			dependencies = (
-			);
-			name = "All UnitTests All SDKs";
-			passBuildSettingsInEnvironment = 1;
-			productName = "All UnitTests All SDKs";
-		};
-/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		8B45A0270DA4696C001148C5 /* UnitTest - UnitTesting */ = {
@@ -1933,6 +1954,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 1DEB918108733D990010E9CD /* Build configuration list for PBXProject "GTM" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -1974,8 +1996,6 @@
 				8B45A0270DA4696C001148C5 /* UnitTest - UnitTesting */,
 				8BC85130127A18AE0046E0FB /* GTMServiceManagementTestingHarness */,
 				8B45A2890DA49B99001148C5 /* UIUnitTestingHarness */,
-				F41A6EE00E02DB4F00788A6C /* Build GTM All SDKs */,
-				F41A6EF80E02DCFC00788A6C /* All UnitTests All SDKs */,
 			);
 		};
 /* End PBXProject section */
@@ -2350,6 +2370,7 @@
 				8BFE6EA31282371200B5C894 /* GTMTransientRootProxyTest.m in Sources */,
 				8BFE6EA41282371200B5C894 /* GTMURITemplateTest.m in Sources */,
 				8BFE6EA51282371200B5C894 /* GTMValidatingContainersTest.m in Sources */,
+				8BBD1F8F1519271A003152F0 /* GTMNSThread+BlocksTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2428,6 +2449,7 @@
 				8B414E881226FB1000D0064F /* GTMServiceManagement.c in Sources */,
 				F42866B91267340A0090FE0F /* GTMURITemplate.m in Sources */,
 				8BF2369013CF67CB00F3FD82 /* GTMKeyValueAnimation.m in Sources */,
+				8BBD1F8D1519258A003152F0 /* GTMNSThread+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2603,206 +2625,6 @@
 			};
 			name = "TigerOrLater-Release";
 		};
-		842575E60E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 848269C80E9FF4BD006E6D9C /* DebugSnowLeopardOrLater.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575E70E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864C0DB3ACD200B4AB10 /* LoadableBundleGCSupported.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "GTM-Info.plist";
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = GoogleToolboxForMac;
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575E80E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575E90E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AppKit";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575EA0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				GTM_NO_DEBUG_FRAMEWORKS = YES;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - Foundation";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575EB0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - UnitTesting";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575EC0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = UnitTesting/GTMUIUnitTestingHarness/Info.plist;
-				PRODUCT_NAME = GTMUIUnitTestingHarness;
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575ED0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575EE0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		842575F00E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 848269C90E9FF4BD006E6D9C /* ReleaseSnowLeopardOrLater.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575F20E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864C0DB3ACD200B4AB10 /* LoadableBundleGCSupported.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "GTM-Info.plist";
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = GoogleToolboxForMac;
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575F40E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575F60E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AppKit";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575F80E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				GTM_NO_DEBUG_FRAMEWORKS = YES;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - Foundation";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575FA0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - UnitTesting";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575FC0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = UnitTesting/GTMUIUnitTestingHarness/Info.plist;
-				PRODUCT_NAME = GTMUIUnitTestingHarness;
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842575FE0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		842576000E9FCFB8003E4511 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
 		8B45A02A0DA4696D001148C5 /* TigerOrLater-Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
@@ -2861,34 +2683,6 @@
 			};
 			name = "TigerOrLater-Release";
 		};
-		8BC85146127A18AE0046E0FB /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = GTMServiceManagementTestingHarness;
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		8BC85148127A18AE0046E0FB /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = GTMServiceManagementTestingHarness;
-			};
-			name = "LeopardOrLater-Release";
-		};
-		8BC85149127A18AE0046E0FB /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = GTMServiceManagementTestingHarness;
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		8BC8514B127A18AE0046E0FB /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = GTMServiceManagementTestingHarness;
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
 		8BFE13F30FB0F2D8001BE894 /* TigerOrLater-Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
@@ -2914,118 +2708,6 @@
 				PRODUCT_NAME = "UnitTest - AddressBook";
 			};
 			name = "TigerOrLater-Release";
-		};
-		8BFE13F60FB0F2D8001BE894 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AddressBook";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		8BFE13F80FB0F2D8001BE894 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AddressBook";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		8BFE13F90FB0F2D8001BE894 /* SnowLeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AddressBook";
-			};
-			name = "SnowLeopardOrLater-Debug";
-		};
-		8BFE13FB0FB0F2D8001BE894 /* SnowLeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AddressBook";
-			};
-			name = "SnowLeopardOrLater-Release";
-		};
-		F41A6EE10E02DB4F00788A6C /* TigerOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "TigerOrLater-Debug";
-		};
-		F41A6EE30E02DB4F00788A6C /* TigerOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "TigerOrLater-Release";
-		};
-		F41A6EE40E02DB4F00788A6C /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F41A6EE60E02DB4F00788A6C /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F41A6EF90E02DCFC00788A6C /* TigerOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "TigerOrLater-Debug";
-		};
-		F41A6EFB0E02DCFC00788A6C /* TigerOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "TigerOrLater-Release";
-		};
-		F41A6EFC0E02DCFC00788A6C /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F41A6EFE0E02DCFC00788A6C /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = "LeopardOrLater-Release";
 		};
 		F42E081F0D19987200D5DDE0 /* TigerOrLater-Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3123,188 +2805,6 @@
 			};
 			name = "TigerOrLater-Release";
 		};
-		F4CA864F0DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864A0DB3ACB200B4AB10 /* DebugLeopardOrLater.xcconfig */;
-			buildSettings = {
-				"ARCHS[sdk=macosx10.5*]" = (
-					i386,
-					x86_64,
-					ppc,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86500DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864C0DB3ACD200B4AB10 /* LoadableBundleGCSupported.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "GTM-Info.plist";
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = GoogleToolboxForMac;
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86510DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86520DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AppKit";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86530DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				GTM_NO_DEBUG_FRAMEWORKS = YES;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - Foundation";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86540DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2420D197F9A009257D2 /* DebugUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - UnitTesting";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86550DB3ACE500B4AB10 /* LeopardOrLater-Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = UnitTesting/GTMUIUnitTestingHarness/Info.plist;
-				PRODUCT_NAME = GTMUIUnitTestingHarness;
-			};
-			name = "LeopardOrLater-Debug";
-		};
-		F4CA86610DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864B0DB3ACB200B4AB10 /* ReleaseLeopardOrLater.xcconfig */;
-			buildSettings = {
-				"ARCHS[sdk=macosx10.5*]" = (
-					i386,
-					x86_64,
-					ppc,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = GTM_Prefix.pch;
-				GCC_WARN_SHADOW = YES;
-				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
-				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86620DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4CA864C0DB3ACD200B4AB10 /* LoadableBundleGCSupported.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "GTM-Info.plist";
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = GoogleToolboxForMac;
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86630DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86640DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - AppKit";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86650DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				GTM_NO_DEBUG_FRAMEWORKS = YES;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - Foundation";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86660DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FE2450D197F9A009257D2 /* ReleaseUnittest.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(value)",
-					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
-				);
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = "UnitTest-Info.plist";
-				PRODUCT_NAME = "UnitTest - UnitTesting";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTMUIUnitTestingHarness.app/Contents/MacOS/GTMUIUnitTestingHarness";
-			};
-			name = "LeopardOrLater-Release";
-		};
-		F4CA86670DB3AD0D00B4AB10 /* LeopardOrLater-Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				INFOPLIST_FILE = UnitTesting/GTMUIUnitTestingHarness/Info.plist;
-				PRODUCT_NAME = GTMUIUnitTestingHarness;
-			};
-			name = "LeopardOrLater-Release";
-		};
 		F4CC9F28148E5DEB00B7D68C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4CC9F3F148E5E2500B7D68C /* DebugMacOSX.xcconfig */;
@@ -3314,7 +2814,6 @@
 				GCC_WARN_SHADOW = YES;
 				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
 				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-				GTM_PLATFORM_WARNING_CFLAGS = "-Wno-missing-format-attribute";
 			};
 			name = Debug;
 		};
@@ -3408,20 +2907,6 @@
 			};
 			name = Debug;
 		};
-		F4CC9F31148E5DEB00B7D68C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = Debug;
-		};
-		F4CC9F32148E5DEB00B7D68C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = Debug;
-		};
 		F4CC9F33148E5DF700B7D68C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4CC9F40148E5E2500B7D68C /* ReleaseMacOSX.xcconfig */;
@@ -3431,7 +2916,6 @@
 				GCC_WARN_SHADOW = YES;
 				GTM_EXTRA_WARNING_OVERRIDE_CFLAGS = "-Wno-unused-parameter";
 				GTM_HOST_GCC_PREPROCESSOR_DEFINITIONS = "COMPONENT_SIGNATURE=\"\\'GTM \\'\" kComponentSignatureString=\"\\\"GoogleToolboxForMac\\\"\"";
-				GTM_PLATFORM_WARNING_CFLAGS = "-Wno-missing-format-attribute";
 			};
 			name = Release;
 		};
@@ -3525,20 +3009,6 @@
 			};
 			name = Release;
 		};
-		F4CC9F3C148E5DF700B7D68C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "Build GTM All SDKs";
-			};
-			name = Release;
-		};
-		F4CC9F3D148E5DF700B7D68C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "All UnitTests All SDKs";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3549,10 +3019,6 @@
 				F4CC9F33148E5DF700B7D68C /* Release */,
 				1DEB918208733D990010E9CD /* TigerOrLater-Debug */,
 				1DEB918308733D990010E9CD /* TigerOrLater-Release */,
-				F4CA864F0DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86610DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575E60E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575F00E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3564,10 +3030,6 @@
 				F4CC9F39148E5DF700B7D68C /* Release */,
 				8B45A02A0DA4696D001148C5 /* TigerOrLater-Debug */,
 				8B45A02C0DA4696D001148C5 /* TigerOrLater-Release */,
-				F4CA86540DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86660DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575EB0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575FA0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3579,10 +3041,6 @@
 				F4CC9F3B148E5DF700B7D68C /* Release */,
 				8B45A28E0DA49B99001148C5 /* TigerOrLater-Debug */,
 				8B45A2900DA49B99001148C5 /* TigerOrLater-Release */,
-				F4CA86550DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86670DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575EC0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575FC0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3594,10 +3052,6 @@
 				F4CC9F3A148E5DF700B7D68C /* Release */,
 				8BC85143127A18AE0046E0FB /* TigerOrLater-Debug */,
 				8BC85145127A18AE0046E0FB /* TigerOrLater-Release */,
-				8BC85146127A18AE0046E0FB /* LeopardOrLater-Debug */,
-				8BC85148127A18AE0046E0FB /* LeopardOrLater-Release */,
-				8BC85149127A18AE0046E0FB /* SnowLeopardOrLater-Debug */,
-				8BC8514B127A18AE0046E0FB /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3609,40 +3063,6 @@
 				F4CC9F36148E5DF700B7D68C /* Release */,
 				8BFE13F30FB0F2D8001BE894 /* TigerOrLater-Debug */,
 				8BFE13F50FB0F2D8001BE894 /* TigerOrLater-Release */,
-				8BFE13F60FB0F2D8001BE894 /* LeopardOrLater-Debug */,
-				8BFE13F80FB0F2D8001BE894 /* LeopardOrLater-Release */,
-				8BFE13F90FB0F2D8001BE894 /* SnowLeopardOrLater-Debug */,
-				8BFE13FB0FB0F2D8001BE894 /* SnowLeopardOrLater-Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		F41A6EED0E02DB6800788A6C /* Build configuration list for PBXLegacyTarget "Build GTM All SDKs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4CC9F31148E5DEB00B7D68C /* Debug */,
-				F4CC9F3C148E5DF700B7D68C /* Release */,
-				F41A6EE10E02DB4F00788A6C /* TigerOrLater-Debug */,
-				F41A6EE30E02DB4F00788A6C /* TigerOrLater-Release */,
-				F41A6EE40E02DB4F00788A6C /* LeopardOrLater-Debug */,
-				F41A6EE60E02DB4F00788A6C /* LeopardOrLater-Release */,
-				842575ED0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575FE0E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		F41A6F070E02DD1500788A6C /* Build configuration list for PBXLegacyTarget "All UnitTests All SDKs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4CC9F32148E5DEB00B7D68C /* Debug */,
-				F4CC9F3D148E5DF700B7D68C /* Release */,
-				F41A6EF90E02DCFC00788A6C /* TigerOrLater-Debug */,
-				F41A6EFB0E02DCFC00788A6C /* TigerOrLater-Release */,
-				F41A6EFC0E02DCFC00788A6C /* LeopardOrLater-Debug */,
-				F41A6EFE0E02DCFC00788A6C /* LeopardOrLater-Release */,
-				842575EE0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842576000E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3654,10 +3074,6 @@
 				F4CC9F38148E5DF700B7D68C /* Release */,
 				F42E081F0D19987200D5DDE0 /* TigerOrLater-Debug */,
 				F42E08200D19987200D5DDE0 /* TigerOrLater-Release */,
-				F4CA86530DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86650DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575EA0E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575F80E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3669,10 +3085,6 @@
 				F4CC9F34148E5DF700B7D68C /* Release */,
 				F42E08700D199A5C00D5DDE0 /* TigerOrLater-Debug */,
 				F42E08710D199A5C00D5DDE0 /* TigerOrLater-Release */,
-				F4CA86500DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86620DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575E70E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575F20E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3684,10 +3096,6 @@
 				F4CC9F35148E5DF700B7D68C /* Release */,
 				F47204350D33BEDF00E9F378 /* TigerOrLater-Debug */,
 				F47204360D33BEDF00E9F378 /* TigerOrLater-Release */,
-				F4CA86510DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86630DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575E80E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575F40E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -3699,10 +3107,6 @@
 				F4CC9F37148E5DF700B7D68C /* Release */,
 				F48FE2670D198C1F009257D2 /* TigerOrLater-Debug */,
 				F48FE2680D198C1F009257D2 /* TigerOrLater-Release */,
-				F4CA86520DB3ACE500B4AB10 /* LeopardOrLater-Debug */,
-				F4CA86640DB3AD0D00B4AB10 /* LeopardOrLater-Release */,
-				842575E90E9FCFA5003E4511 /* SnowLeopardOrLater-Debug */,
-				842575F60E9FCFB8003E4511 /* SnowLeopardOrLater-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

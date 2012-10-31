@@ -221,7 +221,7 @@ NSString *const SenTestLineNumberKey = @"SenTestLineNumberKey";
 
 @implementation SenTestCase
 + (id)testCaseWithInvocation:(NSInvocation *)anInvocation {
-  return [[[[self class] alloc] initWithInvocation:anInvocation] autorelease];
+  return [[[self alloc] initWithInvocation:anInvocation] autorelease];
 }
 
 - (id)initWithInvocation:(NSInvocation *)anInvocation {
@@ -401,6 +401,7 @@ static int MethodSort(id a, id b, void *context) {
 
 @implementation GTMTestCase : SenTestCase
 - (void)invokeTest {
+  NSAutoreleasePool *localPool = [[NSAutoreleasePool alloc] init];
   Class devLogClass = NSClassFromString(@"GTMUnitTestDevLog");
   if (devLogClass) {
     [devLogClass performSelector:@selector(enableTracking)];
@@ -412,6 +413,7 @@ static int MethodSort(id a, id b, void *context) {
     [devLogClass performSelector:@selector(verifyNoMoreLogsExpected)];
     [devLogClass performSelector:@selector(disableTracking)];
   }
+  [localPool drain];
 }
 
 + (BOOL)isAbstractTestCase {
@@ -430,7 +432,7 @@ static int MethodSort(id a, id b, void *context) {
 @end
 
 // Leak detection
-#if !GTM_IPHONE_DEVICE
+#if !GTM_IPHONE_DEVICE && !GTM_SUPPRESS_RUN_LEAKS_HOOK
 // Don't want to get leaks on the iPhone Device as the device doesn't
 // have 'leaks'. The simulator does though.
 
@@ -495,4 +497,4 @@ static __attribute__((constructor)) void _GTMInstallLeaks(void) {
   }
 }
 
-#endif   // !GTM_IPHONE_DEVICE
+#endif   // !GTM_IPHONE_DEVICE && !GTM_SUPPRESS_RUN_LEAKS_HOOK

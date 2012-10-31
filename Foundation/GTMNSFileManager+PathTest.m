@@ -30,7 +30,7 @@
 - (void)setUp {
   // make a directory to scribble in
   NSFileManager *fm = [NSFileManager defaultManager];
-  baseDir_ 
+  baseDir_
     = [[fm gtm_createTemporaryDirectoryBasedOn:@"GTMNSFileManager_PathTestXXXXXX"]
        retain];
 }
@@ -39,7 +39,7 @@
   if (baseDir_) {
     // clean up our directory
     NSFileManager *fm = [NSFileManager defaultManager];
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
+#if GTM_IPHONE_SDK || (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5)
     NSError *error = nil;
     [fm removeItemAtPath:baseDir_ error:&error];
     STAssertNil(error,
@@ -53,7 +53,7 @@
   }
 }
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if GTM_MACOS_SDK && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
 
 - (void)testCreateFullPathToDirectoryAttributes {
   STAssertNotNil(baseDir_, @"setUp failed");
@@ -82,7 +82,7 @@
                 @"Should have failed when passed (nil)");
 }
 
-#endif // MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#endif  // GTM_MACOS_SDK && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
 
 - (void)testfilePathsWithExtensionsInDirectory {
   STAssertNotNil(baseDir_, @"setUp failed");
@@ -126,12 +126,12 @@
     NSString *testDir = nil;
     if ([testDirs[i] length]) {
       testDir = [baseDir_ stringByAppendingPathComponent:testDirs[i]];
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
+#if GTM_IPHONE_SDK || (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5)
       NSError *error = nil;
       STAssertTrue([fm createDirectoryAtPath:testDir
-                 withIntermediateDirectories:YES 
-                                  attributes:nil 
-                                       error:&error], 
+                 withIntermediateDirectories:YES
+                                  attributes:nil
+                                       error:&error],
                    @"Can't create %@ (%@)", testDir, error);
 #else
       STAssertTrue([fm createDirectoryAtPath:testDir attributes:nil], nil);
@@ -236,17 +236,17 @@
 
   // create the empty dir
   NSString *emptyDir = [baseDir_ stringByAppendingPathComponent:@"emptyDir"];
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
+#if GTM_IPHONE_SDK || (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5)
   NSError *error = nil;
-  STAssertTrue([fm createDirectoryAtPath:emptyDir 
-             withIntermediateDirectories:YES 
-                              attributes:nil 
-                                   error:&error], 
+  STAssertTrue([fm createDirectoryAtPath:emptyDir
+             withIntermediateDirectories:YES
+                              attributes:nil
+                                   error:&error],
                @"Can't create %@ (%@)", emptyDir, error);
 #else
   STAssertTrue([fm createDirectoryAtPath:emptyDir attributes:nil], nil);
 #endif  // MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
-  
+
 
   // single
   matches = [fm gtm_filePathsWithExtension:@"txt" inDirectory:emptyDir];

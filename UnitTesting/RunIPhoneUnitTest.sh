@@ -66,15 +66,57 @@ GTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}
 #   to turn it on.
 GTM_DISABLE_IPHONE_LAUNCH_DAEMONS=${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=1}
 
+# GTM_TEST_AFTER_BUILD
+#   When set to 1, tests are run only when TEST_AFTER_BUILD is set to "YES".
+#   This can be used to have tests run as an after build step when running
+#   from the command line, but not when running from within XCode.
+GTM_USE_TEST_AFTER_BUILD=${GTM_USE_TEST_AFTER_BUILD:=0}
+
 ScriptDir=$(dirname "$(echo $0 | sed -e "s,^\([^/]\),$(pwd)/\1,")")
 ScriptName=$(basename "$0")
 ThisScript="${ScriptDir}/${ScriptName}"
+XCODE_VERSION_MINOR=${XCODE_VERSION_MINOR:=0000}
 
 GTMXcodeNote() {
-    echo ${ThisScript}:${1}: note: GTM ${2}
+    echo "${ThisScript}:${1}: note: GTM ${2}"
 }
 
-if [ "$PLATFORM_NAME" == "iphonesimulator" ]; then
+GTMXcodeError() {
+    echo "${ThisScript}:${1}: error: GTM ${2}"
+}
+
+# Creates a file containing the plist for the securityd daemon and prints the
+# filename to stdout.
+GTMCreateLaunchDaemonPlist() {
+  local plist_file
+  plist_file="$TMPDIR/securityd.$$.plist"
+  echo $plist_file
+
+  # Create the plist file with PlistBuddy.
+  /usr/libexec/PlistBuddy \
+    -c "Add :Label string RunIPhoneLaunchDaemons" \
+    -c "Add :ProgramArguments array" \
+        -c "Add :ProgramArguments: string \"$IPHONE_SIMULATOR_ROOT/usr/libexec/securityd\"" \
+    -c "Add :EnvironmentVariables dict" \
+        -c "Add :EnvironmentVariables:DYLD_ROOT_PATH string \"$IPHONE_SIMULATOR_ROOT\"" \
+        -c "Add :EnvironmentVariables:IPHONE_SIMULATOR_ROOT string \"$IPHONE_SIMULATOR_ROOT\"" \
+        -c "Add :EnvironmentVariables:CFFIXED_USER_HOME string \"$CFFIXED_USER_HOME\"" \
+    -c "Add :MachServices dict" \
+        -c "Add :MachServices:com.apple.securityd bool YES" "$plist_file" > /dev/null
+}
+
+if [[ "$GTM_USE_TEST_AFTER_BUILD" == 1 && "$TEST_AFTER_BUILD" == "NO" ]]; then
+  GTMXcodeNote ${LINENO} "Skipping running of unittests since TEST_AFTER_BUILD=NO."
+elif [ "$PLATFORM_NAME" == "iphonesimulator" ]; then
+  # Xcode 4.5 changed how simulator app can be run. The way this script has
+  # been working results in them now just logging a message and calling exit(0)
+  # from Apple code. Report the error that the tests aren't going to work.
+  if [[ "${XCODE_VERSION_MINOR}" -ge "0450" ]]; then
+    GTMXcodeError ${LINENO} \
+      "Unit testing process not supported on Xcode >= 4.5 (${XCODE_VERSION_MINOR}). Use RuniOSUnitTestsUnderSimulator.sh."
+    exit 1
+  fi
+
   # We kill the iPhone simulator because otherwise we run into issues where
   # the unittests fail becuase the simulator is currently running, and
   # at this time the iPhone SDK won't allow two simulators running at the same
@@ -116,9 +158,18 @@ if [ "$PLATFORM_NAME" == "iphonesimulator" ]; then
   fi
 
   if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then
+    # Remove any instance of RunIPhoneLaunchDaemons left running in the case the
+    # 'trap' below fails. We first must check for RunIPhoneLaunchDaemons'
+    # presence as 'launchctl remove' will kill this script if run from within an
+    # Xcode build.
+    launchctl list | grep RunIPhoneLaunchDaemons && launchctl remove RunIPhoneLaunchDaemons
+
     # If we want to test anything that interacts with the keychain, we need
-    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.
-    launchctl submit -l RunIPhoneLaunchDaemons -- "${ScriptDir}/RunIPhoneLaunchDaemons.sh" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME
+    # securityd up and running.
+    LAUNCH_DAEMON_PLIST="$(GTMCreateLaunchDaemonPlist)"
+    launchctl load $LAUNCH_DAEMON_PLIST
+    rm $LAUNCH_DAEMON_PLIST
+
     # No matter how we exit, we want to shut down our launchctl job.
     trap "launchctl remove RunIPhoneLaunchDaemons" INT TERM EXIT
   fi
